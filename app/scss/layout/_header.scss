@@ -1,0 +1,102 @@
+@use '../util/' as *;
+
+.header {
+   position: absolute;
+   left: 0;
+   width: 100%;
+   padding: 20px 18px 0;
+   z-index: 999;
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 51px;
+   }
+
+   &__logo {
+      z-index: 1;
+      font-size: 24px;
+      color: var(--black);
+
+      &--letter {
+         font-size: 30px;
+         color: var(--blue);
+      }
+   }
+   @media screen and (max-width: 768px) {
+      &__menu {
+         position: absolute;
+         width: 80%;
+         top: 70px;
+         right: -100%;
+         height: calc(100vh - 70px);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: var(--black);
+         transition: all 500ms ease-in;
+         border-top-left-radius: 50px;
+
+         &.is-active {
+            right: 0px;
+         }
+      }
+   }
+   &__list {
+      display: flex;
+      align-items: center;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-right: 20px;
+      }
+   }
+   @media screen and (max-width: 768px) {
+      &__list {
+         display: grid;
+         grid-template-columns: max-content;
+         grid-template-rows: repeat(5, 3.75rem);
+         align-items: center;
+         justify-items: center;
+      }
+   }
+
+   &__link {
+      position: relative;
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--white);
+      text-transform: uppercase;
+
+      &::before {
+         content: '';
+         position: absolute;
+         left: 0;
+         bottom: -5px;
+         height: 4px;
+         width: 100%;
+         background-color: var(--blue);
+         visibility: hidden;
+         opacity: 0;
+         transform: scale(0);
+      }
+
+      @media screen and (min-width: 769px) {
+         color: var(--black);
+         font-size: 15px;
+
+         &:hover {
+            color: var(--blue);
+
+            &::before {
+               visibility: visible;
+               opacity: 1;
+               transform: scale(1);
+               transition: all 350ms ease-in;
+            }
+         }
+      }
+   }
+}

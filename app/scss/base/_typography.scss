@@ -1,0 +1,40 @@
+@use '../util/' as *;
+
+h1,
+h2,
+h3,
+h4 {
+   font-family: var(--font-Sans);
+}
+
+.heading {
+   color: var(--black);
+   font-weight: 400;
+
+   &__name {
+      color: var(--blue);
+   }
+
+   &--xxl {
+      @extend .heading;
+      font-size: clamp(34px, 6vw, 53px);
+      max-width: 430px;
+      font-weight: 700;
+      margin-bottom: 20px;
+   }
+}
+
+.paragraph {
+   line-height: 1.2;
+
+   &__name {
+      color: var(--black);
+      font-weight: 700;
+   }
+
+   &--l {
+      @extend .paragraph;
+      font-size: clamp(23px, 3vw, 27px);
+      margin-bottom: 26px;
+   }
+}

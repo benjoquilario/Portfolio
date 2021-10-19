@@ -1,0 +1,46 @@
+@use '../util/' as *;
+
+.btn {
+   $root: &;
+
+   position: relative;
+   outline: none;
+   border: none;
+   font-size: 15px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 300ms, border 300ms ease-in;
+
+   &--menu {
+      @extend #{$root};
+      background-color: transparent;
+      z-index: 1;
+
+      @media screen and (min-width: 769px) {
+         display: none;
+      }
+   }
+
+   &--blue {
+      @extend #{$root};
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--blue);
+      border: 2px solid var(--blue);
+      border-radius: 10px;
+      color: var(--white);
+      box-shadow: 0px 10px 15px -7px var(--black);
+
+      &:hover {
+         background-color: var(--white);
+         color: var(--blue);
+      }
+   }
+
+   &--start {
+      @extend #{$root};
+      width: 160px;
+      height: 48px;
+   }
+}

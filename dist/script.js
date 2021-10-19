@@ -1,0 +1,2 @@
+const btnMenu=document.querySelector(".btn--menu"),headerMenu=document.querySelector(".header__menu"),btnIcon=document.querySelector(".btn__icon");btnMenu.addEventListener("click",(function(){headerMenu.classList.contains("is-active")?(headerMenu.classList.remove("is-active"),btnMenu.setAttribute("aria-expanded",!1),btnIcon.src="./images/icon-hamburger.svg"):(headerMenu.classList.add("is-active"),btnMenu.setAttribute("aria-expanded",!0),btnIcon.src="./images/icon-close.svg")}));
+//# sourceMappingURL=script.js.map
