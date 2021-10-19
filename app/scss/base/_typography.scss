@@ -3,7 +3,8 @@
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
    font-family: var(--font-Sans);
 }
 
@@ -12,7 +13,7 @@ h4 {
    font-weight: 400;
 
    &__name {
-      color: var(--blue);
+      color: var(--red);
    }
 
    &--xxl {
@@ -21,6 +22,27 @@ h4 {
       max-width: 430px;
       font-weight: 700;
       margin-bottom: 20px;
+   }
+
+   &--xl {
+      position: relative;
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 700;
+      text-align: center;
+      color: var(--red);
+      margin-bottom: 29px;
+
+      &::before {
+         content: '';
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: -5px;
+         height: 5px;
+         width: 64px;
+         margin: 0 auto;
+         background-color: var(--red);
+      }
    }
 }
 
@@ -36,5 +58,11 @@ h4 {
       @extend .paragraph;
       font-size: clamp(23px, 3vw, 27px);
       margin-bottom: 26px;
+   }
+
+   &--about {
+      font-size: 15px;
+      margin-bottom: 17px;
+      line-height: 24px;
    }
 }

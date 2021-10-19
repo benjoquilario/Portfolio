@@ -7,7 +7,7 @@
    &__container {
       display: flex;
       flex-direction: column;
-      padding: 166px 0 80px 0;
+      padding: 166px 0 140px 0;
 
       @media screen and (min-width: 769px) {
          justify-content: center;
@@ -26,6 +26,31 @@
          align-items: flex-start;
          flex: 1 0 50%;
          text-align: left;
+      }
+   }
+}
+
+.about {
+   padding: 0 18px;
+
+   &__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+
+      @media screen and (min-width: 769px) {
+         grid-template-columns: 380px 1fr;
+      }
+   }
+
+   &__img {
+      width: 200px;
+      height: 200px;
+
+      @media screen and (min-width: 769px) {
+         width: 270px;
+         height: 270px;
       }
    }
 }

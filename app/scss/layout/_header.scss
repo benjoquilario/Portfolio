@@ -21,12 +21,13 @@
 
       &--letter {
          font-size: 30px;
-         color: var(--blue);
+         color: var(--red);
       }
    }
+
    @media screen and (max-width: 768px) {
       &__menu {
-         position: absolute;
+         position: fixed;
          width: 80%;
          top: 70px;
          right: -100%;
@@ -77,7 +78,7 @@
          bottom: -5px;
          height: 4px;
          width: 100%;
-         background-color: var(--blue);
+         background-color: var(--red);
          visibility: hidden;
          opacity: 0;
          transform: scale(0);
@@ -88,7 +89,7 @@
          font-size: 15px;
 
          &:hover {
-            color: var(--blue);
+            color: var(--red);
 
             &::before {
                visibility: visible;

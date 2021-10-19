@@ -26,21 +26,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: var(--blue);
-      border: 2px solid var(--blue);
+      background-color: var(--red);
+      border: 2px solid var(--red);
       border-radius: 10px;
       color: var(--white);
       box-shadow: 0px 10px 15px -7px var(--black);
 
       &:hover {
          background-color: var(--white);
-         color: var(--blue);
+         color: var(--red);
       }
    }
 
    &--start {
       @extend #{$root};
-      width: 160px;
+      width: 180px;
       height: 48px;
    }
 }
