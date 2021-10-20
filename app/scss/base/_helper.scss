@@ -3,3 +3,22 @@
    width: 100%;
    margin: 0 auto;
 }
+
+.overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   z-index: 2;
+   visibility: hidden;
+   opacity: 0;
+   transition: all 0.5s ease-in-out;
+   @media screen and (max-width: 768px) {
+      &.overlay-active {
+         visibility: visible;
+         opacity: 1;
+      }
+   }
+}

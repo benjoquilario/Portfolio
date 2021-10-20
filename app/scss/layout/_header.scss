@@ -4,7 +4,7 @@
    position: absolute;
    left: 0;
    width: 100%;
-   padding: 20px 18px 0;
+   padding: 24px 18px 0;
    z-index: 999;
 
    &__container {
@@ -12,12 +12,33 @@
       justify-content: space-between;
       align-items: center;
       height: 51px;
+
+      @media screen and (max-width: 768px) {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         padding: 24px 18px 14px;
+         height: 70px;
+         transition: all 0.3s;
+
+         &.header--scroll {
+            background-color: var(--black);
+            padding: 14px 18px 14px;
+            transition: all 0.3s;
+         }
+      }
    }
 
    &__logo {
       z-index: 1;
       font-size: 24px;
       color: var(--black);
+      @media screen and (max-width: 768px) {
+         &.active-color {
+            color: var(--white);
+         }
+      }
 
       &--letter {
          font-size: 30px;
@@ -28,16 +49,15 @@
    @media screen and (max-width: 768px) {
       &__menu {
          position: fixed;
-         width: 80%;
-         top: 70px;
-         right: -100%;
-         height: calc(100vh - 70px);
+         width: 100%;
+         top: 0px;
+         right: -1000px;
+         height: 100vh;
          display: flex;
          justify-content: center;
          align-items: center;
          background-color: var(--black);
          transition: all 500ms ease-in;
-         border-top-left-radius: 50px;
 
          &.is-active {
             right: 0px;
@@ -49,11 +69,14 @@
       align-items: center;
    }
 
-   &__item {
-      &:not(:last-child) {
-         margin-right: 20px;
+   @media screen and (min-width: 769px) {
+      &__item {
+         &:not(:last-child) {
+            margin-right: 28px;
+         }
       }
    }
+
    @media screen and (max-width: 768px) {
       &__list {
          display: grid;

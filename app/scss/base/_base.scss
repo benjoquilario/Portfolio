@@ -16,6 +16,10 @@ body {
    font-family: var(--font-Poppins);
    font-size: 16px;
    overflow-x: hidden;
+
+   &.no-scroll {
+      overflow: hidden;
+   }
 }
 
 img {
@@ -37,4 +41,13 @@ a,
 a:visited,
 a:active {
    text-decoration: none;
+
+   &:focus {
+      outline: none;
+   }
+
+   &:focus-visible {
+      outline: 2px dashed var(--red);
+      outline-offset: 3px;
+   }
 }
