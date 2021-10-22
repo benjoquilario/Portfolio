@@ -34,6 +34,7 @@
       z-index: 1;
       font-size: 24px;
       color: var(--black);
+
       @media screen and (max-width: 768px) {
          &.active-color {
             color: var(--white);
@@ -93,6 +94,11 @@
       font-weight: 600;
       color: var(--white);
       text-transform: uppercase;
+
+      &:active {
+         outline: 3px solid var(--white);
+         outline-offset: 3px;
+      }
 
       &::before {
          content: '';

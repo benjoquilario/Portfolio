@@ -1,3 +1,5 @@
+@use '../util/' as *;
+
 .container {
    max-width: 1100px;
    width: 100%;
@@ -20,5 +22,26 @@
          visibility: visible;
          opacity: 1;
       }
+   }
+}
+
+.skip-to-content-link {
+   position: fixed;
+   top: 110px;
+   left: 0;
+   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+   padding: 20px 40px;
+   background-color: var(--white);
+   font-size: 15px;
+   text-decoration: underline;
+   z-index: 100;
+   transform: translateX(-200px);
+   transition: transform 300ms ease;
+   color: var(--black);
+
+   &:focus {
+      outline: 3px dashed var(--red);
+      outline-offset: 0;
+      transform: translateX(0);
    }
 }

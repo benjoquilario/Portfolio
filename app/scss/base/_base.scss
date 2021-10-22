@@ -3,6 +3,10 @@ html {
    box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -17,8 +21,10 @@ body {
    font-size: 16px;
    overflow-x: hidden;
 
-   &.no-scroll {
-      overflow: hidden;
+   @media screen and (max-width: 768px) {
+      &.no-scroll {
+         overflow: hidden;
+      }
    }
 }
 

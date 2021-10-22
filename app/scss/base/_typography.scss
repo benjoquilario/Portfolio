@@ -48,8 +48,22 @@ p {
    &--l {
       font-size: 24px;
       font-weight: 600;
-      color: var(--red);
+      color: var(--black);
       margin-bottom: 29px;
+   }
+
+   &--m {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      color: var(--white);
+   }
+
+   &--services {
+      text-transform: uppercase;
+      font-weight: 600;
+      text-align: center;
+      margin: 15px 0;
    }
 }
 
