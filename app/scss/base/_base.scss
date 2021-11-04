@@ -3,10 +3,6 @@ html {
    box-sizing: border-box;
 }
 
-html {
-   scroll-behavior: smooth;
-}
-
 *,
 *::before,
 *::after {
@@ -53,7 +49,7 @@ a:active {
    }
 
    &:focus-visible {
-      outline: 2px dashed var(--red);
+      outline: 2px solid var(--red);
       outline-offset: 3px;
    }
 }

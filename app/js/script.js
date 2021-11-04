@@ -57,12 +57,7 @@ const mobileScroll = function () {
    }
 };
 
-const desktopScroll = function () {
-   // if(window.innerHeight <= )
-};
-
 window.addEventListener('scroll', mobileScroll);
-
 const hideMobileMenu = function () {
    const menu = document.querySelector('.is-active');
    if (window.innerWidth <= 768 && headerMenu) {
@@ -74,3 +69,46 @@ const hideMobileMenu = function () {
 
 headerList.addEventListener('click', hideMobileMenu);
 headerLogo.addEventListener('click', hideMobileMenu);
+
+// Smooth Behavior
+const smoothScroll = function (e) {
+   e.preventDefault();
+
+   if (e.target.classList.contains('header__link')) {
+      const id = e.target.getAttribute('href');
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+   }
+};
+document
+   .querySelector('.btn--blue')
+   .addEventListener('click', () =>
+      document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })
+   );
+headerMenu.addEventListener('click', smoothScroll);
+
+// Menu animation
+/*
+const hero = document.querySelector('#hero');
+
+const stickyNav = function (entries) {
+   const [entry] = entries;
+   console.log(entry);
+   if (!entry.isIntersecting) {
+      document.querySelector('.header').classList.add('header--scroll');
+      headerLogo.style.color = '#ffffff';
+      document.querySelector('.header__link').forEach(link => {
+         link.style.color = '#ffffff';
+      });
+   } else {
+      document.querySelector('.header').classList.remove('header--scroll');
+      headerLogo.style.color = '#000000';
+   }
+};
+
+const heroObserver = new IntersectionObserver(stickyNav, {
+   root: null,
+   threshold: 0,
+   rootMargin: '51px',
+});
+heroObserver.observe(hero);
+*/

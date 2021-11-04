@@ -16,7 +16,7 @@
    }
 
    &:focus-visible {
-      outline: 3px dashed var(--red);
+      outline: 3px solid var(--red);
       outline-offset: 3px;
    }
 
@@ -29,7 +29,7 @@
       z-index: 10;
 
       &:focus {
-         outline: 3px dashed var(--red);
+         outline: 3px solid var(--red);
          outline-offset: 3px;
       }
 
@@ -45,7 +45,7 @@
       align-items: center;
       background-color: var(--red);
       border: 2px solid var(--red);
-      border-radius: 10px;
+      border-radius: 4px;
       color: var(--white);
       box-shadow: 0px 10px 15px -7px var(--black);
 

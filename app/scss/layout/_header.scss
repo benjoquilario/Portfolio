@@ -4,7 +4,7 @@
    position: absolute;
    left: 0;
    width: 100%;
-   padding: 24px 18px 0;
+   padding: 24px 38px 0;
    z-index: 999;
 
    &__container {
@@ -12,20 +12,18 @@
       justify-content: space-between;
       align-items: center;
       height: 51px;
+      transition: all 350ms ease-in-out;
 
       @media screen and (max-width: 768px) {
-         position: fixed;
-         top: 0;
-         left: 0;
-         width: 100%;
-         padding: 24px 18px 14px;
-         height: 70px;
-         transition: all 0.3s;
-
          &.header--scroll {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 24px 22px;
+            height: 70px;
+            transition: all 0.3s ease-in-out;
             background-color: var(--black);
-            padding: 14px 18px 14px;
-            transition: all 0.3s;
          }
       }
    }
@@ -110,7 +108,8 @@
          background-color: var(--red);
          visibility: hidden;
          opacity: 0;
-         transform: scale(0);
+         transform-origin: left;
+         transform: scaleX(0);
       }
 
       @media screen and (min-width: 769px) {

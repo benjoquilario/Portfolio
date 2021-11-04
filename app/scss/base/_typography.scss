@@ -16,6 +16,13 @@ p {
       color: var(--red);
    }
 
+   &--intro {
+      color: var(--black);
+      font-size: clamp(30px, 5vw, 42px);
+      text-align: center;
+      font-weight: 600;
+   }
+
    &--xxl {
       @extend .heading;
       font-size: clamp(34px, 6vw, 53px);
@@ -26,11 +33,12 @@ p {
 
    &--xl {
       position: relative;
-      font-size: clamp(20px, 4vw, 30px);
+      font-size: clamp(17px, 4vw, 23px);
       font-weight: 700;
       text-align: center;
       color: var(--red);
-      margin-bottom: 39px;
+      margin-bottom: 29px;
+      text-transform: uppercase;
 
       &::before {
          content: '';
@@ -46,10 +54,11 @@ p {
    }
 
    &--l {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 600;
+      text-transform: uppercase;
       color: var(--black);
-      margin-bottom: 29px;
+      margin-bottom: 19px;
    }
 
    &--m {
@@ -82,9 +91,9 @@ p {
    }
 
    &--about {
-      font-size: 15px;
+      font-size: 16px;
       margin-bottom: 17px;
-      line-height: 24px;
+      line-height: 28px;
    }
 }
 
