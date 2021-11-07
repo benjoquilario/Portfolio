@@ -1,5 +1,4 @@
 # Portfolio
-# Frontend Mentor - Fylo landing page with two column layout solution
 
 This is my Personal portfolio
 
