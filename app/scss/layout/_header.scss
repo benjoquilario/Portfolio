@@ -4,8 +4,24 @@
    position: absolute;
    left: 0;
    width: 100%;
-   padding: 24px 38px 0;
+   padding: 24px 28px 0;
    z-index: 999;
+
+   &.header--in {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px 28px;
+      transition: all 0.3s ease-in-out;
+      background-color: var(--white);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.04);
+      animation: headerScrollIn 700ms ease-in-out forwards;
+   }
+
+   &.scroll-out {
+      animation: headerScrollOut 250ms ease-in-out forwards;
+   }
 
    &__container {
       display: flex;
@@ -13,19 +29,6 @@
       align-items: center;
       height: 51px;
       transition: all 350ms ease-in-out;
-
-      @media screen and (max-width: 768px) {
-         &.header--scroll {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 24px 22px;
-            height: 70px;
-            transition: all 0.3s ease-in-out;
-            background-color: var(--black);
-         }
-      }
    }
 
    &__logo {

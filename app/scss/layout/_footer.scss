@@ -1,0 +1,74 @@
+@use '../util/' as *;
+
+.footer {
+   position: relative;
+   background-color: var(--black);
+   padding: 120px 60px;
+
+   &__container {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr;
+      grid-template-areas:
+         'location email number'
+         'copy copy links';
+      grid-template-rows: 140px 1fr;
+      justify-items: center;
+      margin-top: 50px;
+      color: #94a9db7e;
+
+      h5 {
+         color: var(--white);
+         text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+         grid-template-columns: 1fr;
+         grid-template-areas:
+            'location'
+            'email'
+            'number'
+            'copy'
+            'links';
+         grid-template-rows: auto;
+         grid-gap: 24px;
+      }
+   }
+
+   &__location {
+      grid-area: location;
+   }
+
+   &__email {
+      grid-area: email;
+   }
+
+   &__number {
+      grid-area: number;
+   }
+
+   &__copyright {
+      grid-area: copy;
+      font-size: 14px;
+   }
+
+   &__links {
+      grid-area: links;
+
+      &__link {
+         padding: 0 10px;
+
+         &:hover {
+            .footer__links__icon {
+               color: var(--red);
+               transition: color 350ms ease-in-out;
+            }
+         }
+      }
+
+      &__icon {
+         color: var(--white);
+         font-size: 22px;
+         transition: color 350ms ease-in-out;
+      }
+   }
+}

@@ -33,13 +33,14 @@
    padding: 80px 28px 20px;
 
    &__container {
-      display: grid;
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
       grid-gap: 19px;
       justify-items: center;
       align-items: center;
 
       @media screen and (min-width: 769px) {
+         display: grid;
          grid-template-columns: 1fr 1.4fr;
          grid-template-rows: 290px 1fr;
       }
@@ -49,6 +50,12 @@
       width: 286px;
       height: 270px;
       object-fit: cover;
+   }
+
+   &__hidden {
+      opacity: 0;
+      transform: translateY(9rem);
+      transition: all 350ms ease-in-out;
    }
 }
 
@@ -109,10 +116,10 @@
       grid-template-columns: 50px 1fr;
       align-items: center;
       width: 100%;
-      font-size: 15px;
+      font-size: clamp(12px, 3vw, 15px);
       font-weight: 500;
       text-align: left;
-      padding: 10px 17px;
+      padding: 10px 14px;
       margin-bottom: 15px;
       box-shadow: 0 0 6px 2px rgba(48, 48, 48, 0.1);
    }
@@ -301,6 +308,7 @@
 }
 .project {
    position: relative;
+
    overflow: hidden;
 
    &__img {
@@ -308,7 +316,6 @@
       min-height: 100%;
       width: 100%;
       border-radius: 8px;
-      object-fit: cover;
    }
 
    &__overlay {
@@ -343,7 +350,15 @@
          max-width: 100%;
          margin: auto 0;
          padding: 0.5rem 3rem;
+
+         @media screen and (max-width: 768px) {
+            padding: 0.5rem 1rem;
+         }
       }
+   }
+
+   &__description {
+      font-size: clamp(13px, 3vw, 16px);
    }
 
    &__view,
@@ -355,6 +370,11 @@
       font-size: 14px;
       transition: all 0.3s ease;
       border-radius: 7px;
+
+      @media screen and (max-width: 768px) {
+         font-size: 11px;
+         height: 28px;
+      }
    }
 
    &__code {
@@ -363,6 +383,10 @@
       color: var(--white);
       width: 180px;
       transition: all 0.3s ease;
+
+      @media screen and (max-width: 768px) {
+         width: 135px;
+      }
 
       &:hover {
          background-color: #343a40c9;
@@ -375,6 +399,10 @@
       color: var(--white);
       transition: all 0.3s ease;
       width: 130px;
+
+      @media screen and (max-width: 768px) {
+         width: 90px;
+      }
 
       &:hover {
          background-color: #868d94ce;

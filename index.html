@@ -63,7 +63,7 @@
          </div>
       </header>
       <main>
-         <section class="hero" id="hero">
+         <section class="hero section__select" id="hero">
             <div class="hero__container container">
                <div class="hero__text">
                   <h1 class="heading heading--xxl">
@@ -83,18 +83,18 @@
                </div>
             </div>
          </section>
-         <section class="about" id="about">
+         <section class="about section__select" id="about">
             <h2 class="heading heading--xl">About</h2>
             <h3 class="heading heading--intro">Let me introduce myself.</h3>
             <div class="about__container container">
-               <div class="about__image">
+               <div class="section__select about__image">
                   <img
                      src="./images/aboutme.jpg"
                      alt="About Benjo"
                      class="about__img"
                   />
                </div>
-               <div class="about__text">
+               <div class="section__select about__text">
                   <p class="paragraph paragraph--about">
                      <!-- I'm a self-taught passionate Frontend developer from
                      Philippines PH. -->
@@ -104,7 +104,7 @@
                      Technologies: HTML5, CSS/SCSS and Pure JavaScript.
                   </p>
                </div>
-               <div class="about__profile">
+               <div class="section__select about__profile">
                   <h2 class="heading heading--xl">PROFILE</h2>
                   <div class="about__profile__profile">
                      <p class="paragraph paragraph--about">
@@ -144,7 +144,7 @@
                      </a>
                   </div>
                </div>
-               <div class="skills" id="skills">
+               <div class="skills section__select" id="skills">
                   <h2 class="heading heading--xl">Skills</h2>
                   <div class="skills__container container">
                      <div class="skills__tech">
@@ -165,10 +165,6 @@
                            <i class="fab fa-sass icon__skills"></i>
                            <span class="skill__name">Sass/Scss</span>
                         </div>
-                        <div class="skills__names">
-                           <i class="fab fa-react icon__skills"></i>
-                           <span class="skill__name">React</span>
-                        </div>
                      </div>
                      <div class="skills__tools">
                         <h3 class="heading heading--l">Tools</h3>
@@ -179,35 +175,6 @@
                         <div class="skills__names">
                            <i class="fas fa-terminal icon__skills"></i>
                            <span class="skill__name">Terminal</span>
-                        </div>
-                        <div class="skills__names">
-                           <svg
-                              aria-hidden="true"
-                              id="ps_x5F_cc_x5F_app_x5F_RGB.svg"
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 240 234"
-                              width="33"
-                              height="32"
-                           >
-                              <style>
-                                 .st0 {
-                                    fill: #8e0404;
-                                 }
-                                 .st1 {
-                                    fill: #fff;
-                                 }
-                              </style>
-                              <path class="st0" d="M10 10h220v214H10z" />
-                              <path
-                                 class="st1"
-                                 d="M0 0v234h240V0H0zm10 10h220v214H10V10z"
-                              />
-                              <path
-                                 class="st1"
-                                 d="M174.3 98.3c-1.5-.7-3.4-1-5.8-1-12.6 0-21 9.7-21 25.8 0 18.4 8.6 25.8 19.8 25.8 2.4 0 5-.3 6.9-1.1V98.3h.1zm-44.8 25.6c0-23.3 15-41.5 39.6-41.5 2.1 0 3.2 0 5.2.2v-26c0-.6.5-1 1-1h16.1c.8 0 1 .3 1 .8v91.4c0 2.7 0 6.1.5 9.8 0 .7 0 .8-.6 1.1-8.4 4-17.2 5.8-25.6 5.8-21.7 0-37.2-13.4-37.2-40.6zm-34.1-16.2l28 54.3c.5.8.2 1.6-.6 1.6h-17.4c-1.1 0-1.6-.3-2.1-1.3-6.4-13.2-12.9-26.9-19.6-41.1h-.2c-6 13.4-12.6 28-19 41.2-.5.8-1 1.1-1.8 1.1H46.1c-1 0-1.1-.8-.6-1.4l27.4-52.7L46.4 57c-.6-.8 0-1.5.7-1.5h17.2c1 0 1.5.2 1.8 1.1C72.4 69.9 78.8 83 84.8 96.4h.2c5.8-13.2 12.2-26.5 18.3-39.6.5-.8.8-1.3 1.8-1.3h16.1c.8 0 1.1.6.6 1.5l-26.4 50.7z"
-                              />
-                           </svg>
-                           <span class="skill__name">Adode XD</span>
                         </div>
                         <div class="skills__names">
                            <i class="fab fa-npm icon__skills"></i>
@@ -328,9 +295,9 @@
             </div>
          </section>
       -->
-         <section class="projects" id="projects">
+         <section class="projects section__select" id="projects">
             <h2 class="heading heading--xl">Projects</h2>
-            <div class="projects__container container">
+            <div class="projects__container container section__select">
                <!-- <article class="projects__project">
                   <div class="projects__content">
                      <a href="#" class="projects__image">
@@ -412,6 +379,7 @@
                            <a
                               href="https://github.com/benjoquilario/AMA-Bank"
                               class="project__view"
+                              target="_blank"
                               id="focus"
                               ><i
                                  class="fas fa-external-link-alt icon__project"
@@ -421,6 +389,7 @@
                            <a
                               href="https://github.com/benjoquilario/AMA-Bank"
                               class="project__code"
+                              target="_blank"
                               id="focus"
                               ><i class="fab fa-github icon__project"></i>
                               View Source code
@@ -431,7 +400,7 @@
                </article>
                <article class="project">
                   <img
-                     src="./images/gym-website.png"
+                     src="./images/gymweb.png"
                      alt="BMQ gym-website"
                      class="project__img"
                   />
@@ -447,6 +416,7 @@
                               href="https://github.com/benjoquilario/AMA-Bank"
                               class="project__view"
                               id="focus"
+                              target="_blank"
                               ><i
                                  class="fas fa-external-link-alt icon__project"
                               ></i>
@@ -455,6 +425,7 @@
                            <a
                               href="https://github.com/benjoquilario/AMA-Bank"
                               class="project__code"
+                              target="_blank"
                               id="focus"
                               ><i class="fab fa-github icon__project"></i>
                               View Source code
@@ -466,6 +437,52 @@
             </div>
          </section>
       </main>
+      <footer class="footer section__select">
+         <h3 class="heading heading--xl">Contact</h3>
+         <h2 class="heading heading--intro" style="color: #fff">
+            I'd Love To Hear From You.
+         </h2>
+         <div class="footer__container container">
+            <div class="footer__location">
+               <h5>WHERE TO FIND ME</h5>
+               <p>Sauyo, Quezon City</p>
+            </div>
+            <div class="footer__email">
+               <h5>EMAIL ME AT</h5>
+               <p>benjoquilario@gmail.com</p>
+            </div>
+            <div class="footer__number">
+               <h5>CALL ME AT</h5>
+               <p>Phone: (+63) 9054407977</p>
+            </div>
+            <p class="footer__copyright">
+               © Copyright 2021 | Benjo M. Quilario
+            </p>
+            <div class="footer__links">
+               <a
+                  href="#"
+                  aria-label="visit facebook"
+                  class="footer__links__link"
+               >
+                  <i class="fab fa-facebook-f footer__links__icon"></i>
+               </a>
+               <a
+                  href="#"
+                  aria-label="visit github"
+                  class="footer__links__link"
+               >
+                  <i class="fab fa-github footer__links__icon"></i>
+               </a>
+               <a
+                  href="#"
+                  aria-label="visit linkenin"
+                  class="footer__links__link"
+               >
+                  <i class="fab fa-linkedin-in footer__links__icon"></i>
+               </a>
+            </div>
+         </div>
+      </footer>
       <script src="./dist/script.js"></script>
    </body>
 </html>
