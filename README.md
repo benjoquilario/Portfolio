@@ -5,7 +5,7 @@ This is my Personal portfolio
 
 ### Screenshot
 
-![](./finished/screenshot.png)
+![](./screenshot.png)
 
 ### Links
 
