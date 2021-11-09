@@ -1,488 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link
-         rel="stylesheet"
-         href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-         crossorigin="anonymous"
-      />
-      <title>Benjo Quilario</title>
-      <link rel="stylesheet" href="./dist/style.css" />
-   </head>
-   <body>
-      <div class="overlay"></div>
-      <a href="#about" class="skip-to-content-link">Skip to content</a>
-      <header class="header">
-         <div class="header__container container">
-            <a href="#" class="header__logo">
-               BM<span class="header__logo--letter">Q </span>
-               />
-            </a>
-            <nav class="header__nav header__nav--open" aria-label="primary">
-               <button
-                  class="btn btn--menu active"
-                  aria-label="menu toggle"
-                  aria-expanded="false"
-               >
-                  <img
-                     src="./images/icon-hamburger.svg"
-                     alt="menu toggler"
-                     class="btn__icon"
-                  />
-               </button>
-               <div class="header__menu">
-                  <ul class="header__list">
-                     <li class="header__item">
-                        <a href="#about" class="header__link">About</a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#skills" class="header__link">Skills</a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#projects" class="header__link">Project</a>
-                     </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Benjo Quilario</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <a href="#about" class="skip-to-content-link">Skip to content</a>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          BM<span class="header__logo--letter">Q </span>
+          />
+        </a>
+        <nav class="header__nav header__nav--open" aria-label="primary">
+          <button
+            class="btn btn--menu active"
+            aria-label="menu toggle"
+            aria-expanded="false"
+          >
+            <img
+              src="./images/icon-hamburger.svg"
+              alt="menu toggler"
+              class="btn__icon"
+            />
+          </button>
+          <div class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#about" class="header__link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="#skills" class="header__link">Skills</a>
+              </li>
+              <li class="header__item">
+                <a href="#projects" class="header__link">Project</a>
+              </li>
 
-                     <li class="header__item">
-                        <a
-                           href="https://github.com/benjoquilario"
-                           class="header__link"
-                           aria-label="github"
-                           ><i class="fab fa-github"></i
-                        ></a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#" class="header__link">Contact</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <main>
-         <section class="hero section__select" id="hero">
-            <div class="hero__container container">
-               <div class="hero__text">
-                  <h1 class="heading heading--xxl">
-                     Hello, I am
-                     <span class="heading__name">Benjo Quilario</span>
-                  </h1>
-                  <p class="paragraph paragraph--l">
-                     Front Developer from
-                     <span class="paragraph__name">PH</span>
-                  </p>
-                  <button class="btn btn--start btn--blue">
-                     MORE ABOUT ME
-                  </button>
-               </div>
-               <div class="hero__image">
-                  <img src="./images/me.jpg" alt="" />
-               </div>
-            </div>
-         </section>
-         <section class="about section__select" id="about">
-            <h2 class="heading heading--xl">About</h2>
-            <h3 class="heading heading--intro">Let me introduce myself.</h3>
-            <div class="about__container container">
-               <div class="section__select about__image">
-                  <img
-                     src="./images/aboutme.jpg"
-                     alt="About Benjo"
-                     class="about__img"
-                  />
-               </div>
-               <div class="section__select about__text">
-                  <p class="paragraph paragraph--about">
-                     <!-- I'm a self-taught passionate Frontend developer from
+              <li class="header__item">
+                <a
+                  href="https://github.com/benjoquilario"
+                  class="header__link"
+                  aria-label="github"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero section__select" id="hero">
+        <div class="hero__container container">
+          <div class="hero__text">
+            <h1 class="heading heading--xxl">
+              Hello, I am
+              <span class="heading__name">Benjo Quilario</span>
+            </h1>
+            <p class="paragraph paragraph--l">
+              Front Developer from
+              <span class="paragraph__name">PH</span>
+            </p>
+            <button class="btn btn--start btn--blue">MORE ABOUT ME</button>
+          </div>
+          <div class="hero__image">
+            <img src="./images/me.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about section__select" id="about">
+        <h2 class="heading heading--xl">About</h2>
+        <h3 class="heading heading--intro">Let me introduce myself.</h3>
+        <div class="about__container container">
+          <div class="section__select about__image">
+            <img
+              src="./images/aboutme.jpg"
+              alt="About Benjo"
+              class="about__img"
+            />
+          </div>
+          <div class="section__select about__text">
+            <p class="paragraph paragraph--about">
+              <!-- I'm a self-taught passionate Frontend developer from
                      Philippines PH. -->
-                     Welcome to my Simple Web Portfolio! Thank you for taking
-                     the time to visit. This portfolio of mine was developed
-                     using my knowledge about Web Development with the following
-                     Technologies: HTML5, CSS/SCSS and Pure JavaScript.
-                  </p>
-               </div>
-               <div class="section__select about__profile">
-                  <h2 class="heading heading--xl">PROFILE</h2>
-                  <div class="about__profile__profile">
-                     <p class="paragraph paragraph--about">
-                        I'm a self-taught passionate Frontend developer from
-                        Philippines PH.
-                     </p>
-                     <p class="paragraph paragraph--about">
-                        I am second year student at AMA College University
-                        pursuing Bachelor of Science and Information Technology
-                        (BSIT). I
-                        <i><b>love coding</b></i
-                        >, <i><b>solving problems</b></i> and
-                        <i><b>communicating with others people</b></i
-                        >. I enjoy being <i><b>challenged</b></i> and love
-                        working on projects that require working out of my
-                        comfort zone and skill set.
-                     </p>
-                     <p class="paragraph paragraph--about">
-                        Get in touch 👉 benjoquilario@gmail.com
-                     </p>
-                     <a href="#" class="btn btn--more">
-                        <span class="learnMore__text">Resume</span>
-                        <span class="learnMore__icon">
-                           <svg
-                              aria-hidden="true"
-                              width="40"
-                              height="12"
-                              xmlns="http://www.w3.org/2000/svg"
-                           >
-                              <path
-                                 d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                                 fill="#000"
-                                 fill-rule="nonzero"
-                              />
-                           </svg>
-                        </span>
-                     </a>
-                  </div>
-               </div>
-               <div class="skills section__select" id="skills">
-                  <h2 class="heading heading--xl">Skills</h2>
-                  <div class="skills__container container">
-                     <div class="skills__tech">
-                        <h3 class="heading heading--l">Languages</h3>
-                        <div class="skills__names">
-                           <i class="fab fa-html5 icon__skills"></i>
-                           <span class="skill__name">HTML5</span>
-                        </div>
-                        <div class="skills__names">
-                           <i class="fab fa-css3-alt icon__skills"></i>
-                           <span class="skill__name">CSS3</span>
-                        </div>
-                        <div class="skills__names">
-                           <i class="fab fa-js icon__skills"></i>
-                           <span class="skill__name">JavaScript</span>
-                        </div>
-                        <div class="skills__names">
-                           <i class="fab fa-sass icon__skills"></i>
-                           <span class="skill__name">Sass/Scss</span>
-                        </div>
-                     </div>
-                     <div class="skills__tools">
-                        <h3 class="heading heading--l">Tools</h3>
-                        <div class="skills__names">
-                           <i class="fab fa-git-alt icon__skills"></i>
-                           <span class="skill__name">Git</span>
-                        </div>
-                        <div class="skills__names">
-                           <i class="fas fa-terminal icon__skills"></i>
-                           <span class="skill__name">Terminal</span>
-                        </div>
-                        <div class="skills__names">
-                           <i class="fab fa-npm icon__skills"></i>
-                           <span class="skill__name">NPM</span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+              Welcome to my Simple Web Portfolio! Thank you for taking the time
+              to visit. This portfolio of mine was developed using my knowledge
+              about Web Development with the following Technologies: HTML5,
+              CSS/SCSS and Vanilla JavaScript.
+            </p>
+          </div>
+          <div class="section__select about__profile">
+            <h2 class="heading heading--xl">PROFILE</h2>
+            <div class="about__profile__profile">
+              <p class="paragraph paragraph--about">
+                I'm a self-taught passionate Frontend developer from Philippines
+                PH.
+              </p>
+              <p class="paragraph paragraph--about">
+                I am second year student at AMA College University pursuing
+                Bachelor of Science in Information Technology (BSIT). I
+                <i><b>love coding</b></i
+                >, <i><b>solving problems</b></i> and
+                <i><b>communicating with others people</b></i
+                >. I enjoy being <i><b>challenged</b></i> and love working on
+                projects that require working out of my comfort zone and skill
+                set.
+              </p>
+              <p class="paragraph paragraph--about">
+                Get in touch 👉 benjoquilario@gmail.com
+              </p>
+              <a href="#" class="btn btn--more">
+                <span class="learnMore__text">Resume</span>
+                <span class="learnMore__icon">
+                  <svg
+                    aria-hidden="true"
+                    width="40"
+                    height="12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                      fill="#000"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </span>
+              </a>
             </div>
-         </section>
-         <!--
-         <section class="services" id="services">
-            <h2 class="heading heading--xl">Services</h2>
-            <div class="services__container container">
-               <div class="services__service">
-                  <img src="./images/design.svg" alt class="services__images" />
-                  <h3 class="heading heading--services">
-                     Convert your design into Website
-                  </h3>
-                  <p>
-                     Make an ideal functional website with your mockups and ui
-                     prototypes.
-                  </p>
-               </div>
-               <div class="services__service">
-                  <img
-                     src="./images/Responsive.svg"
-                     alt
-                     class="services__images"
-                  />
-                  <h3 class="heading heading--services">Responsive Design</h3>
-                  <p>
-                     I'll make sure their experience is optimal no matter their
-                     screen size.
-                  </p>
-               </div>
-               <div class="services__service">
-                  <img src="./images/seo.svg" alt class="services__images" />
-                  <h3 class="heading heading--services">SEO Optimize</h3>
-                  <p>
-                     SEO ensures that your users are able to find your website
-                     quickly and easily.
-                  </p>
-               </div>
-            </div>
-         </section>
-      
-         <section class="skills" id="skills">
+          </div>
+          <div class="skills section__select" id="skills">
             <h2 class="heading heading--xl">Skills</h2>
             <div class="skills__container container">
-               <div class="skills__tech">
-                  <h3 class="heading heading--l">Tech Stack</h3>
-                  <div class="skills__names">
-                     <i class="fab fa-html5 icon__skills"></i>
-                     <span class="skill__name">HTML5</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fab fa-css3-alt icon__skills"></i>
-                     <span class="skill__name">CSS3</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fab fa-js icon__skills"></i>
-                     <span class="skill__name">JavaScript</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fab fa-sass icon__skills"></i>
-                     <span class="skill__name">Sass/Scss</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fab fa-react icon__skills"></i>
-                     <span class="skill__name">React</span>
-                  </div>
-               </div>
-               <div class="skills__tools">
-                  <h3 class="heading heading--l">Tools</h3>
-                  <div class="skills__names">
-                     <i class="fab fa-git-alt icon__skills"></i>
-                     <span class="skill__name">Git</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fas fa-terminal icon__skills"></i>
-                     <span class="skill__name">Terminal</span>
-                  </div>
-                  <div class="skills__names">
-                     <svg
-                        aria-hidden="true"
-                        id="ps_x5F_cc_x5F_app_x5F_RGB.svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 240 234"
-                        width="37"
-                        height="37"
-                     >
-                        <style>
-                           .st0 {
-                              fill: #8e0404;
-                           }
-                           .st1 {
-                              fill: #fff;
-                           }
-                        </style>
-                        <path class="st0" d="M10 10h220v214H10z" />
-                        <path
-                           class="st1"
-                           d="M0 0v234h240V0H0zm10 10h220v214H10V10z"
-                        />
-                        <path
-                           class="st1"
-                           d="M174.3 98.3c-1.5-.7-3.4-1-5.8-1-12.6 0-21 9.7-21 25.8 0 18.4 8.6 25.8 19.8 25.8 2.4 0 5-.3 6.9-1.1V98.3h.1zm-44.8 25.6c0-23.3 15-41.5 39.6-41.5 2.1 0 3.2 0 5.2.2v-26c0-.6.5-1 1-1h16.1c.8 0 1 .3 1 .8v91.4c0 2.7 0 6.1.5 9.8 0 .7 0 .8-.6 1.1-8.4 4-17.2 5.8-25.6 5.8-21.7 0-37.2-13.4-37.2-40.6zm-34.1-16.2l28 54.3c.5.8.2 1.6-.6 1.6h-17.4c-1.1 0-1.6-.3-2.1-1.3-6.4-13.2-12.9-26.9-19.6-41.1h-.2c-6 13.4-12.6 28-19 41.2-.5.8-1 1.1-1.8 1.1H46.1c-1 0-1.1-.8-.6-1.4l27.4-52.7L46.4 57c-.6-.8 0-1.5.7-1.5h17.2c1 0 1.5.2 1.8 1.1C72.4 69.9 78.8 83 84.8 96.4h.2c5.8-13.2 12.2-26.5 18.3-39.6.5-.8.8-1.3 1.8-1.3h16.1c.8 0 1.1.6.6 1.5l-26.4 50.7z"
-                        />
-                     </svg>
-                     <span class="skill__name">Adode XD</span>
-                  </div>
-                  <div class="skills__names">
-                     <i class="fab fa-npm icon__skills"></i>
-                     <span class="skill__name">NPM</span>
-                  </div>
-               </div>
+              <div class="skills__tech">
+                <h3 class="heading heading--l">Languages</h3>
+                <div class="skills__names">
+                  <i class="fab fa-html5 icon__skills"></i>
+                  <span class="skill__name">HTML5</span>
+                </div>
+                <div class="skills__names">
+                  <i class="fab fa-css3-alt icon__skills"></i>
+                  <span class="skill__name">CSS3</span>
+                </div>
+                <div class="skills__names">
+                  <i class="fab fa-js icon__skills"></i>
+                  <span class="skill__name">JavaScript</span>
+                </div>
+                <div class="skills__names">
+                  <i class="fab fa-sass icon__skills"></i>
+                  <span class="skill__name">Sass/Scss</span>
+                </div>
+              </div>
+              <div class="skills__tools">
+                <h3 class="heading heading--l">Tools</h3>
+                <div class="skills__names">
+                  <i class="fab fa-git-alt icon__skills"></i>
+                  <span class="skill__name">Git</span>
+                </div>
+                <div class="skills__names">
+                  <i class="fas fa-terminal icon__skills"></i>
+                  <span class="skill__name">Terminal</span>
+                </div>
+                <div class="skills__names">
+                  <i class="fab fa-npm icon__skills"></i>
+                  <span class="skill__name">NPM</span>
+                </div>
+              </div>
             </div>
-         </section>
-      -->
-         <section class="projects section__select" id="projects">
-            <h2 class="heading heading--xl">Projects</h2>
-            <div class="projects__container container section__select">
-               <!-- <article class="projects__project">
-                  <div class="projects__content">
-                     <a href="#" class="projects__image">
-                        <img src="./images/AMABank.png" alt="AMA Bank" />
-                     </a>
-                     <div class="projects__info">
-                        <div class="projects__info__wrap">
-                           <h3 class="projects__title">AMA Bank</h3>
-                        </div>
-                        <div class="projects__info__wrap">
-                           <h3 class="projects__subtitle">Web Application -</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="projects__source">
-                     <a
-                        href="https://github.com/benjoquilario/AMA-Bank"
-                        class="projects__source__view"
-                     >
-                        <i class="fas fa-external-link-alt icon__project"></i>
-                        Visit Site
-                     </a>
-                     <a
-                        href="https://github.com/benjoquilario/AMA-Bank"
-                        class="projects__source__code"
-                     >
-                        <i class="fab fa-github icon__project"></i>
-                        View source code
-                     </a>
-                  </div>
-               </article>
-               <article class="projects__project">
-                  <div class="projects__content">
-                     <a href="#" class="projects__image">
-                        <img
-                           src="./images/gym-website.png"
-                           alt="BM Q Website"
-                        />
-                     </a>
-                     <div class="projects__info">
-                        <div class="projects__info__wrap">
-                           <h3 class="projects__title">BM Q Gym</h3>
-                        </div>
-                        <div class="projects__info__wrap">
-                           <h3 class="projects__subtitle">Landing Page -</h3>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="projects__source">
-                     <a
-                        href="https://github.com/benjoquilario/AMA-Bank"
-                        class="projects__source__view"
-                        ><i class="fas fa-external-link-alt icon__project"></i>
-                        Visit site
-                     </a>
-                     <a
-                        href="https://github.com/benjoquilario/AMA-Bank"
-                        class="projects__source__code"
-                        ><i class="fab fa-github icon__project"></i>
-                        View Source code
-                     </a>
-                  </div>
-               </article> -->
-               <article class="project">
-                  <img
-                     src="./images/AMABank.png"
-                     alt="AMA bank"
-                     class="project__img"
-                  />
-                  <div class="project__overlay">
-                     <div class="project__overlay__desc">
-                        <div class="project__title">AMA BANK</div>
-                        <p class="project__description">
-                           One of my projects I built after finishing a udemy
-                           course. AMA Bank is Web Application using Array
-                           Method
-                        </p>
-                        <div class="project__link">
-                           <a
-                              href="https://github.com/benjoquilario/AMA-Bank"
-                              class="project__view"
-                              target="_blank"
-                              id="focus"
-                              ><i
-                                 class="fas fa-external-link-alt icon__project"
-                              ></i>
-                              Visit site
-                           </a>
-                           <a
-                              href="https://github.com/benjoquilario/AMA-Bank"
-                              class="project__code"
-                              target="_blank"
-                              id="focus"
-                              ><i class="fab fa-github icon__project"></i>
-                              View Source code
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </article>
-               <article class="project">
-                  <img
-                     src="./images/gymweb.png"
-                     alt="BMQ gym-website"
-                     class="project__img"
-                  />
-                  <div class="project__overlay">
-                     <div class="project__overlay__desc">
-                        <div class="project__title">BMQ Gym</div>
-                        <p class="project__description">
-                           BMQ Gym Website is a gym landing page website with
-                           with a client side email validation.
-                        </p>
-                        <div class="project__link">
-                           <a
-                              href="https://github.com/benjoquilario/AMA-Bank"
-                              class="project__view"
-                              id="focus"
-                              target="_blank"
-                              ><i
-                                 class="fas fa-external-link-alt icon__project"
-                              ></i>
-                              Visit site
-                           </a>
-                           <a
-                              href="https://github.com/benjoquilario/AMA-Bank"
-                              class="project__code"
-                              target="_blank"
-                              id="focus"
-                              ><i class="fab fa-github icon__project"></i>
-                              View Source code
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </article>
+          </div>
+        </div>
+      </section>
+      <section class="projects section__select" id="projects">
+        <h2 class="heading heading--xl">Projects</h2>
+        <div class="projects__container container section__select">
+          <article class="project">
+            <img
+              src="./images/AMABank.png"
+              alt="AMA bank"
+              class="project__img"
+            />
+            <div class="project__overlay">
+              <div class="project__overlay__desc">
+                <div class="project__title">AMA BANK</div>
+                <p class="project__description">
+                  One of my projects I built after finishing a udemy course. AMA
+                  Bank is Web Application using Array Method
+                </p>
+                <div class="project__link">
+                  <a
+                    href="https://ama-bank.vercel.app/"
+                    class="project__view"
+                    target="_blank"
+                    id="focus"
+                    ><i class="fas fa-external-link-alt icon__project"></i>
+                    Visit site
+                  </a>
+                  <a
+                    href="https://github.com/benjoquilario/AMA-Bank"
+                    class="project__code"
+                    target="_blank"
+                    id="focus"
+                    ><i class="fab fa-github icon__project"></i>
+                    View Source code
+                  </a>
+                </div>
+              </div>
             </div>
-         </section>
-      </main>
-      <footer class="footer section__select">
-         <h3 class="heading heading--xl">Contact</h3>
-         <h2 class="heading heading--intro" style="color: #fff">
-            I'd Love To Hear From You.
-         </h2>
-         <div class="footer__container container">
-            <div class="footer__location">
-               <h5>WHERE TO FIND ME</h5>
-               <p>Sauyo, Quezon City</p>
+          </article>
+          <article class="project">
+            <img
+              src="./images/gymweb.png"
+              alt="BMQ gym-website"
+              class="project__img"
+            />
+            <div class="project__overlay">
+              <div class="project__overlay__desc">
+                <div class="project__title">BMQ Gym</div>
+                <p class="project__description">
+                  BMQ Gym Website is a gym landing page website with a client
+                  side email validation.
+                </p>
+                <div class="project__link">
+                  <a
+                    href="https://bmq-gym-website-benjoquilario.vercel.app/"
+                    class="project__view"
+                    id="focus"
+                    target="_blank"
+                    ><i class="fas fa-external-link-alt icon__project"></i>
+                    Visit site
+                  </a>
+                  <a
+                    href="https://github.com/benjoquilario/bmq-gym-website"
+                    class="project__code"
+                    target="_blank"
+                    id="focus"
+                    ><i class="fab fa-github icon__project"></i>
+                    View Source code
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="footer__email">
-               <h5>EMAIL ME AT</h5>
-               <p>benjoquilario@gmail.com</p>
-            </div>
-            <div class="footer__number">
-               <h5>CALL ME AT</h5>
-               <p>Phone: (+63) 9054407977</p>
-            </div>
-            <p class="footer__copyright">
-               © Copyright 2021 | Benjo M. Quilario
-            </p>
-            <div class="footer__links">
-               <a
-                  href="#"
-                  aria-label="visit facebook"
-                  class="footer__links__link"
-               >
-                  <i class="fab fa-facebook-f footer__links__icon"></i>
-               </a>
-               <a
-                  href="#"
-                  aria-label="visit github"
-                  class="footer__links__link"
-               >
-                  <i class="fab fa-github footer__links__icon"></i>
-               </a>
-               <a
-                  href="#"
-                  aria-label="visit linkenin"
-                  class="footer__links__link"
-               >
-                  <i class="fab fa-linkedin-in footer__links__icon"></i>
-               </a>
-            </div>
-         </div>
-      </footer>
-      <script src="./dist/script.js"></script>
-   </body>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section__select">
+      <h3 class="heading heading--xl">Contact</h3>
+      <h2 class="heading heading--intro" style="color: #fff">
+        I'd Love To Hear From You.
+      </h2>
+      <div class="footer__container container">
+        <div class="footer__location">
+          <h5>WHERE TO FIND ME</h5>
+          <p>Sauyo, Quezon City</p>
+        </div>
+        <div class="footer__email">
+          <h5>EMAIL ME AT</h5>
+          <p>benjoquilario@gmail.com</p>
+        </div>
+        <div class="footer__number">
+          <h5>CALL ME AT</h5>
+          <p>Phone: (+63) 9054407977</p>
+        </div>
+        <p class="footer__copyright">© Copyright 2021 | Benjo M. Quilario</p>
+        <div class="footer__links">
+          <a href="#" aria-label="visit facebook" class="footer__links__link">
+            <i class="fab fa-facebook-f footer__links__icon"></i>
+          </a>
+          <a href="#" aria-label="visit github" class="footer__links__link">
+            <i class="fab fa-github footer__links__icon"></i>
+          </a>
+          <a href="#" aria-label="visit linkenin" class="footer__links__link">
+            <i class="fab fa-linkedin-in footer__links__icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./dist/script.js"></script>
+  </body>
 </html>
