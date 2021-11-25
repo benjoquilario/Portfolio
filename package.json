@@ -18,14 +18,14 @@
    "homepage": "https://github.com/benjoquilario/Portfolio#readme",
    "dependencies": {
       "browser-sync": "^2.27.7",
-      "cssnano": "^5.0.10",
+      "cssnano": "^5.0.11",
       "g": "^2.0.1",
       "gulp": "^4.0.2",
       "gulp-cli": "^2.3.0",
       "gulp-postcss": "^9.0.1",
       "gulp-sass": "^5.0.0",
       "gulp-terser": "^2.1.0",
-      "postcss": "^8.3.11",
-      "sass": "^1.43.4"
+      "postcss": "^8.4.1",
+      "sass": "^1.43.5"
    }
 }

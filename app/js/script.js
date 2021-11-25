@@ -1,131 +1,178 @@
 // header Navigator
-const btnMenu = document.querySelector('.btn--menu');
-const headerMenu = document.querySelector('.header__menu');
-const headerList = document.querySelector('.header__list');
-const btnIcon = document.querySelector('.btn__icon');
-const headerLogo = document.querySelector('.header__logo');
-const overlay = document.querySelector('.overlay');
-const body = document.querySelector('body');
-const headerContainer = document.querySelector('.header__container');
-const header = document.querySelector('.header');
-
-const navShow = function () {
-   if (headerMenu.classList.contains('is-active')) {
-      headerMenu.classList.remove('is-active');
-      body.classList.remove('no-scroll');
-      headerLogo.classList.remove('active-color');
-      overlay.classList.remove('overlay-active');
-      btnMenu.setAttribute('aria-expanded', false);
-      btnIcon.src = './images/icon-hamburger.svg';
-   } else {
-      headerMenu.classList.add('is-active');
-      body.classList.add('no-scroll');
-      headerLogo.classList.add('active-color');
-      overlay.classList.add('overlay-active');
-      btnMenu.setAttribute('aria-expanded', true);
-      btnIcon.src = './images/icon-close.svg';
+class App {
+   constructor() {
+      this.vars();
+      this.setupEvents();
    }
-};
 
-btnMenu.addEventListener('click', navShow);
-window.addEventListener('keydown', function (e) {
-   console.log(e.key);
-   if (e.key === 'Escape') {
-      navShow();
+   vars() {
+      this.selectors = {
+         btnMenu: '.btn--menu',
+         headerMenu: '.header__menu',
+         headerList: '.header__list',
+         btnIcon: '.btn__icon',
+         headerLogo: '.header__logo',
+         overlay: '.overlay',
+         body: 'body',
+         headerContainer: '.header__container',
+         header: '.header',
+         menu: '.is-active',
+         btnBlue: '.btn--blue',
+         section: '.section__select',
+      };
+
+      this.btnMenu = document.querySelector(this.selectors.btnMenu);
+      this.btnBlue = document.querySelector(this.selectors.btnBlue);
+      this.headerMenu = document.querySelector(this.selectors.headerMenu);
+      this.headerList = document.querySelector(this.selectors.headerList);
+      this.btnIcon = document.querySelector(this.selectors.btnIcon);
+      this.headerLogo = document.querySelector(this.selectors.headerLogo);
+      this.overlay = document.querySelector(this.selectors.overlay);
+      this.body = document.querySelector(this.selectors.body);
+      this.headerContainer = document.querySelector(
+         this.selectors.headerContainer
+      );
+      this.header = document.querySelector(this.selectors.header);
+      this.menu = document.querySelector(this.selectors.menu);
+
+      this.sectionSelect = document.querySelectorAll(this.selectors.section);
+      this.hero = document.querySelector('#hero');
+      this.headerHeight = this.header.getBoundingClientRect().height;
+
+      if (!this.body || !this.header) return;
+
+      this.timer;
+      this.isInitialized = false;
+      this.transitionDuration = 300;
+
+      return true;
    }
-});
 
-/*
-const headerScroll = function () {
-   if (
-      document.body.scrollTop > 10 ||
-      document.documentElement.scrollTop > 10
-   ) {
-      header.classList.add('header--scroll');
-   } else {
-      header.classList.remove('header--scroll');
+   loadEvents() {}
+
+   setupEvents() {
+      this.btnMenu.addEventListener('click', this.toggle.bind(this));
+      this.headerList.addEventListener('click', this.hideMenu.bind(this));
+      this.headerLogo.addEventListener('click', this.hideMenu.bind(this));
+
+      this.headerMenu.addEventListener('click', this.smoothScroll.bind(this));
+      this.btnBlue.addEventListener('click', () => {
+         document
+            .querySelector('#about')
+            .scrollIntoView({ behavior: 'smooth' });
+      });
+
+      window.addEventListener('keydown', e => {
+         console.log(e.key);
+         if (e.key === 'Escape') {
+            this.hideNav();
+         }
+      });
+
+      window.addEventListener('load', this.showAnimation.bind(this));
+
+      this.fadeInSection();
+      this.stickyNav();
    }
-};
 
-const mobileScroll = function () {
-   if (window.innerWidth <= 768) {
-      headerScroll();
-   } else {
-      header.classList.remove('header--scroll');
+   showAnimation() {
+      this.body.classList.remove('loading');
    }
-}; */
 
-// window.addEventListener('scroll', mobileScroll);
-
-const hideMobileMenu = function () {
-   const menu = document.querySelector('.is-active');
-
-   if (window.innerWidth <= 768 && headerMenu) {
-      menu.classList.remove('is-active');
-      body.classList.remove('no-scroll');
-      headerLogo.classList.remove('active-color');
-      overlay.classList.remove('overlay-active');
-      btnIcon.src = './images/icon-hamburger.svg';
+   toggle() {
+      this.headerMenu.classList.contains('is-active')
+         ? this.hideNav()
+         : this.showNav();
+      return this;
    }
-};
 
-headerList.addEventListener('click', hideMobileMenu);
-headerLogo.addEventListener('click', hideMobileMenu);
-
-// Smooth Behavior
-const smoothScroll = function (e) {
-   e.preventDefault();
-
-   if (e.target.classList.contains('header__link')) {
-      const id = e.target.getAttribute('href');
-      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+   hideNav() {
+      this.headerMenu.classList.remove('is-active');
+      this.body.classList.remove('no-scroll');
+      this.headerLogo.classList.remove('active-color');
+      this.overlay.classList.remove('overlay-active');
+      this.btnMenu.setAttribute('aria-expanded', false);
+      this.btnIcon.src = './images/icon-hamburger.svg';
    }
-};
-document
-   .querySelector('.btn--blue')
-   .addEventListener('click', () =>
-      document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })
-   );
-headerMenu.addEventListener('click', smoothScroll);
 
-const sectionSelect = document.querySelectorAll('.section__select');
-
-const animationIn = function (entries, observer) {
-   const [entry] = entries;
-   if (!entry.isIntersecting) return;
-   entry.target.classList.remove('section__hidden');
-
-   observer.unobserve(entry.target);
-};
-
-const sectionAnimation = new IntersectionObserver(animationIn, {
-   root: null,
-   threshold: 0,
-});
-
-sectionSelect.forEach(section => {
-   sectionAnimation.observe(section);
-   section.classList.add('section__hidden');
-});
-
-// Menu animation
-
-const hero = document.querySelector('#hero');
-const headerHeight = header.getBoundingClientRect().height;
-
-const stickyNav = function (entries, observer) {
-   const [entry] = entries;
-
-   if (!entry.isIntersecting) {
-      header.classList.add('header--in');
-   } else {
-      header.classList.remove('header--in');
+   showNav() {
+      this.headerMenu.classList.add('is-active');
+      this.body.classList.add('no-scroll');
+      this.headerLogo.classList.add('active-color');
+      this.overlay.classList.add('overlay-active');
+      this.btnMenu.setAttribute('aria-expanded', true);
+      this.btnIcon.src = './images/icon-close.svg';
    }
-};
 
-const heroObserver = new IntersectionObserver(stickyNav, {
-   root: null,
-   threshold: 0,
-   rootMargin: `-${headerHeight}px`,
-});
-heroObserver.observe(hero);
+   hideMenu() {
+      if (window.innerWidth <= 768 && this.headerMenu) {
+         this.headerMenu.classList.remove('is-active');
+         this.body.classList.remove('no-scroll');
+         this.headerLogo.classList.remove('active-color');
+         this.overlay.classList.remove('overlay-active');
+         this.btnIcon.src = './images/icon-hamburger.svg';
+      }
+   }
+
+   smoothScroll(e) {
+      e.preventDefault();
+
+      if (e.target.classList.contains('header__link')) {
+         this.id = e.target.getAttribute('href');
+         document.querySelector(this.id).scrollIntoView({ behavior: 'smooth' });
+      }
+   }
+
+   fadeInSection() {
+      this.options = {
+         root: null,
+         threshold: 0,
+      };
+
+      this.sectionObserve = new IntersectionObserver((entries, observer) => {
+         entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.remove('section__hidden');
+
+            observer.unobserve(entry.target);
+         });
+      }, this.options);
+
+      this.sectionSelect.forEach(section => {
+         this.sectionObserve.observe(section);
+         section.classList.add('section__hidden');
+      });
+   }
+
+   stickyNav() {
+      this.options = {
+         root: null,
+         threshold: 0,
+         rootMargin: `-${this.headerHeight}px`,
+      };
+
+      this.heroObserver = new IntersectionObserver((entries, observe) => {
+         if (this.isInitialized) {
+            entries.forEach(entry => {
+               if (!entry.isIntersecting) {
+                  this.header.classList.add('header--in');
+               } else {
+                  this.header.classList.add('scroll-out');
+
+                  this.timer = setTimeout(() => {
+                     this.header.classList.remove('header--in');
+                     this.header.classList.remove('scroll-out');
+                     this.timer = false;
+                  }, this.transitionDuration);
+                  this.header.classList.remove('header--in');
+               }
+            });
+         }
+         this.isInitialized = true;
+      }, this.options);
+
+      this.heroObserver.observe(this.hero);
+   }
+}
+
+const app = new App();
