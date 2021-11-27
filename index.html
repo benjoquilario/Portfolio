@@ -4,12 +4,18 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="theme-color" content="#b92222" />
+      <meta
+         name="description"
+         content="This Benjo Quilario's personal website that contains a collection of web project and some JS programming projects"
+      />
       <link
          rel="stylesheet"
          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
          crossorigin="anonymous"
       />
+      <link rel="shortcut icon" type="image/png" href="images/code-solid.svg" />
       <title>Benjo Quilario</title>
       <link rel="stylesheet" href="./dist/style.css" />
    </head>
@@ -32,6 +38,7 @@
                      src="./images/icon-hamburger.svg"
                      alt="menu toggler"
                      class="btn__icon"
+                     style="color: #b92222"
                   />
                </button>
                <div class="header__menu">
@@ -77,6 +84,22 @@
                   <button class="btn btn--start btn--blue">
                      MORE ABOUT ME
                   </button>
+                  <div class="hero__icon">
+                     <a
+                        href="https://twitter.com/iam_benjo"
+                        target="_blank"
+                        class="hero__icon__link"
+                        aria-label="github"
+                        ><i class="fab fa-twitter hero__icon__link"></i
+                     ></a>
+                     <a
+                        href="https://github.com/benjoquilario"
+                        target="_blank"
+                        class="hero__icon__link"
+                        aria-label="github"
+                        ><i class="fab fa-github hero__icon__link"></i
+                     ></a>
+                  </div>
                </div>
                <div class="hero__image">
                   <img src="./images/me.jpg" alt="" />
@@ -98,10 +121,38 @@
                   <p class="paragraph paragraph--about">
                      <!-- I'm a self-taught passionate Frontend developer from
                      Philippines PH. -->
-                     Welcome! Welcome! Welcome! Thank you for taking the time to
-                     visit. This portfolio of mine was developed using my
-                     knowledge about Web Development with the following
-                     Technologies: HTML5, CSS/SCSS and Vanilla JavaScript.
+
+                     Hi there, my name is Benjo M Quilario from Quezon City. I
+                     specialized in web development and UX/UI designs. I
+                     discovered my passion during this pandemic, and that is to
+                     build websites. Pursuing my dream on programming and will
+                     always continue from this point. <br />
+                     <br />
+                     Now this website is running with code using HTML5,
+                     CSS3/SCSS, Gulp, Vanilla Javascript and Netlify as my
+                     hosting site.
+                     <br />
+                     <a
+                        href="https://github.com/benjoquilario/Portfolio"
+                        target="_blank"
+                        class="btn btn--more"
+                     >
+                        <span class="learnMore__text">View Source code</span>
+                        <span class="learnMore__icon">
+                           <svg
+                              aria-hidden="true"
+                              width="40"
+                              height="12"
+                              xmlns="http://www.w3.org/2000/svg"
+                           >
+                              <path
+                                 d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                 fill="#000"
+                                 fill-rule="nonzero"
+                              />
+                           </svg>
+                        </span>
+                     </a>
                   </p>
                </div>
                <div class="section__select about__profile">
@@ -117,12 +168,7 @@
                         (BSIT). I
                         <i><b>love coding</b></i
                         >, <i><b>solving problems</b></i
-                        >,
-                        <i
-                           ><b
-                              >communicating with others people and I refuse to
-                              build boring websites</b
-                           ></i
+                        >, and <i><b>communicating with others people</b></i
                         >. I enjoy being <i><b>challenged</b></i> and love
                         working on projects that require working out of my
                         comfort zone and skill set.
@@ -155,35 +201,67 @@
                      <div class="skills__tech">
                         <h3 class="heading heading--l">Languages</h3>
                         <div class="skills__names">
-                           <i class="fab fa-html5 icon__skills"></i>
+                           <img
+                              src="./images/HTML5_logo_and_wordmark.svg"
+                              alt="HTML5"
+                           />
                            <span class="skill__name">HTML5</span>
                         </div>
                         <div class="skills__names">
-                           <i class="fab fa-css3-alt icon__skills"></i>
+                           <!-- <i class="fab fa-css3-alt icon__skills"></i> -->
+                           <img src="./images/CSS.3.svg" alt="CSS3" />
                            <span class="skill__name">CSS3</span>
                         </div>
                         <div class="skills__names">
-                           <i class="fab fa-js icon__skills"></i>
+                           <!-- <i class="fab fa-js icon__skills"></i> -->
+                           <img
+                              src="./images/Unofficial_JavaScript_logo_2.svg"
+                              alt="JavaScript"
+                           />
                            <span class="skill__name">JavaScript</span>
                         </div>
                         <div class="skills__names">
-                           <i class="fab fa-sass icon__skills"></i>
+                           <!-- <i class="fab fa-sass icon__skills"></i> -->
+                           <img
+                              src="./images/Sass_Logo_Color.svg"
+                              alt="Sass/Scss"
+                           />
                            <span class="skill__name">Sass/Scss</span>
+                        </div>
+                        <div class="skills__names">
+                           <!-- <i class="fab fa-sass icon__skills"></i> -->
+                           <img src="./images/React.svg" alt="React" />
+                           <span class="skill__name">React</span>
                         </div>
                      </div>
                      <div class="skills__tools">
                         <h3 class="heading heading--l">Tools</h3>
                         <div class="skills__names">
-                           <i class="fab fa-git-alt icon__skills"></i>
+                           <!-- <i class="fab fa-git-alt icon__skills"></i> -->
+                           <img src="./images/Git_icon.svg" alt="Git" />
                            <span class="skill__name">Git</span>
                         </div>
                         <div class="skills__names">
-                           <i class="fas fa-terminal icon__skills"></i>
-                           <span class="skill__name">Terminal</span>
+                           <img
+                              src="./images/Font_Awesome_5_brands_github-square.svg"
+                              alt="Github"
+                           />
+                           <span class="skill__name">Github</span>
                         </div>
                         <div class="skills__names">
-                           <i class="fab fa-npm icon__skills"></i>
+                           <!-- <i class="fab fa-npm icon__skills"></i> -->
+                           <img src="./images/Npm-logo.svg" alt="NPM" />
                            <span class="skill__name">NPM</span>
+                        </div>
+                        <div class="skills__names">
+                           <!-- <i class="fab fa-npm icon__skills"></i> -->
+                           <img src="./images/netlify.svg" alt="Netlify" />
+                           <span class="skill__name">Netlify</span>
+                        </div>
+                        <div class="skills__names">
+                           <!-- <i class="fab fa-npm icon__skills"></i> -->
+                           <img src="./images/vs-code.svg" alt="VS Code" />
+                           <span class="skill__name">VS Code</span>
                         </div>
                      </div>
                   </div>
@@ -191,7 +269,7 @@
             </div>
          </section>
          <section class="projects section__select" id="projects">
-            <h2 class="heading heading--xl">Projects</h2>
+            <h2 class="heading heading--xl">Featured Projects</h2>
             <div class="projects__container container section__select">
                <article class="project">
                   <img
@@ -203,9 +281,13 @@
                      <div class="project__overlay__desc">
                         <div class="project__title">AMA BANK</div>
                         <p class="project__description">
-                           One of my projects I built after finishing a udemy
+                           <!-- One of my projects I built after finishing a udemy
                            course. AMA Bank is Web Application using Array
-                           Method
+                           Method -->
+                           An application that allows users to transfer money,
+                           request money and closed account. This is one of the
+                           web application that I built after finishing course
+                           from udemy
                         </p>
                         <div class="project__link">
                            <a
@@ -241,7 +323,8 @@
                         <div class="project__title">TRIUMPH GYM</div>
                         <p class="project__description">
                            TRIUMPH GYM Website is a gym landing page website
-                           with a client side email validation.
+                           with a client side email, login and signup
+                           validation.
                         </p>
                         <div class="project__link">
                            <a
