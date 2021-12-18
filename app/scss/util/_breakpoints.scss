@@ -23,3 +23,41 @@ $breakpoints-down: (
       @content;
    }
 }
+
+@mixin imageInit {
+   display: block;
+   height: 100%;
+   width: 100%;
+   z-index: 1;
+}
+
+@mixin shadowOverlay {
+   &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+         to right,
+         rgba(0, 0, 0, 0.4),
+         transparent
+      );
+      z-index: -1;
+      transition: opacity 250ms ease-in;
+   }
+
+   &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.7);
+      opacity: 0;
+      transition: opacity 600ms ease-in;
+      z-index: 1;
+   }
+}

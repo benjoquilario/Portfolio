@@ -30,8 +30,13 @@
    }
 
    &__image {
+      position: relative;
       img {
+         position: relative;
          transform: translateY(-60px);
+
+         @include imageInit;
+         @include shadowOverlay;
 
          @media screen and (max-width: 768px) {
             transform: translateY(0);
@@ -70,6 +75,7 @@
          display: grid;
          grid-template-columns: 1fr 1.4fr;
          grid-template-rows: 290px 1fr;
+         margin-top: 60px;
       }
    }
 
@@ -178,14 +184,53 @@
 }
 .project {
    position: relative;
-
    overflow: hidden;
+   height: 380px;
+   z-index: 1;
+
+   @media screen and (max-width: 568px) {
+      height: 290px;
+   }
+
+   @media screen and (max-width: 411px) {
+      height: 250px;
+   }
+
+   &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: transform 500ms ease-in;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center;
+   }
+
+   &--1::before {
+      background-image: url('../../../images/D-anime.png');
+   }
+
+   &--2::before {
+      background-image: url('../../../images/AMAUI.png');
+   }
+
+   &--3::before {
+      background-image: url('../../../images/Gym.png');
+   }
 
    &__img {
       display: block;
       min-height: 100%;
       width: 100%;
       border-radius: 8px;
+   }
+
+   &__effects {
+      @include imageInit;
+      @include shadowOverlay;
    }
 
    &__overlay {
@@ -200,10 +245,12 @@
       display: flex;
       flex-direction: column;
       opacity: 0;
+      z-index: 2;
 
       &:hover {
          opacity: 1;
          cursor: pointer;
+         z-index: 2;
 
          & > * {
             transform: translateX(0px);
@@ -219,7 +266,7 @@
       &__desc {
          max-width: 100%;
          margin: auto 0;
-         padding: 0.5rem 3rem;
+         padding: 0.5rem 2rem;
 
          @media screen and (max-width: 768px) {
             padding: 0.5rem 1rem;
@@ -286,7 +333,7 @@
    }
 
    &__title {
-      font-size: clamp(20px, 4vw, 30px);
+      font-size: clamp(18px, 4vw, 30px);
       font-weight: 600;
       letter-spacing: 1px;
       margin-bottom: 6px;

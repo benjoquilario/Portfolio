@@ -1,8 +1,11 @@
 // header Navigator
 class App {
+   _skipToContent = document.querySelector('.skip-to-content-link');
+
    constructor() {
       this.vars();
       this.setupEvents();
+      this._skipToContent.focus();
    }
 
    vars() {
@@ -92,7 +95,7 @@ class App {
       this.headerLogo.classList.remove('active-color');
       this.overlay.classList.remove('overlay-active');
       this.btnMenu.setAttribute('aria-expanded', false);
-      this.btnIcon.src = './images/icon-hamburger.svg';
+      this.btnMenu.classList.remove('menu-active');
    }
 
    showNav() {
@@ -101,7 +104,7 @@ class App {
       this.headerLogo.classList.add('active-color');
       this.overlay.classList.add('overlay-active');
       this.btnMenu.setAttribute('aria-expanded', true);
-      this.btnIcon.src = './images/icon-close.svg';
+      this.btnMenu.classList.add('menu-active');
    }
 
    hideMenu() {
@@ -110,7 +113,7 @@ class App {
          this.body.classList.remove('no-scroll');
          this.headerLogo.classList.remove('active-color');
          this.overlay.classList.remove('overlay-active');
-         this.btnIcon.src = './images/icon-hamburger.svg';
+         this.btnMenu.classList.remove('menu-active');
       }
    }
 

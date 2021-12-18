@@ -35,12 +35,16 @@
                   aria-label="menu toggle"
                   aria-expanded="false"
                >
-                  <img
+                  <!-- <img
                      src="./images/icon-hamburger.svg"
                      alt="menu toggler"
                      class="btn__icon"
                      style="color: #b92222"
-                  />
+                  /> -->
+
+                  <span class="btn--menu--bar"></span>
+                  <span class="btn--menu--bar"></span>
+                  <span class="btn--menu--bar"></span>
                </button>
                <div class="header__menu">
                   <ul class="header__list">
@@ -103,7 +107,7 @@
                   </div>
                </div>
                <div class="hero__image">
-                  <img src="./images/me.jpg" alt="" />
+                  <img src="./images/me.jpg" alt="Benjo Quilario" />
                </div>
             </div>
          </section>
@@ -123,7 +127,14 @@
                      <!-- I'm a self-taught passionate Frontend developer from
                      Philippines PH. -->
 
-                     Hi there, my name is Benjo M Quilario from Quezon City. I specialized in web development and UX/UI designs. My web development journey started during quarantine pandemic. One time when surfing a web, I accidentally clicked the inspect elements in a browser and got curious about what was written in it. Having no idea what is it. I started doing some experiment editing styles of websites and thus started my curiosity in Frontend. <br />
+                     Hi there, my name is Benjo M Quilario from Quezon City. I
+                     specialized in web development and UX/UI designs. My web
+                     development journey started during quarantine pandemic. One
+                     time when surfing a web, I accidentally clicked the inspect
+                     elements in a browser and got curious about what was
+                     written in it. Having no idea what is it. I started doing
+                     some experiment editing styles of websites and thus started
+                     my curiosity in Frontend. <br />
                      <br />
                      Now this website is running with code using HTML5,
                      CSS3/SCSS, Gulp, Vanilla Javascript and Netlify as my
@@ -268,24 +279,68 @@
          <section class="projects section__select" id="projects">
             <h2 class="heading heading--xl">Featured Projects</h2>
             <div class="projects__container container section__select">
-               <article class="project">
-                  <img
-                     src="./images/AMABank.png"
-                     alt="AMA bank"
+               <article class="project project--1">
+                  <!-- <img
+                     src="./images/D-anime.png"
+                     alt="BMQ gym-website"
                      class="project__img"
-                  />
+                  /> -->
+                  <span class="project__effects"></span>
+                  <div class="project__overlay">
+                     <div class="project__overlay__desc">
+                        <div class="project__title">D-Anime</div>
+                        <p class="project__description">
+                           D-Anime is an app uses external APIs which is
+                           <a
+                              href="https://jikan.docs.apiary.io/"
+                              style="color: #b92222"
+                              >Jikan APIs</a
+                           >
+                           . An application where user will able to search there
+                           favorite anime and gives tons of information about
+                           that specific anime
+                        </p>
+
+                        <div class="project__link">
+                           <a
+                              href="https://d-anime.netlify.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/D-Anime"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+               <article class="project project--2">
+                  <!-- <img
+                     src="./images/AMAUI.png"
+                     alt="AMA bank"
+                     class="project__img" -->
+                  <!-- /> -->
+                  <span class="project__effects"></span>
                   <div class="project__overlay">
                      <div class="project__overlay__desc">
                         <div class="project__title">AMA BANK</div>
                         <p class="project__description">
-                           <!-- One of my projects I built after finishing a udemy
-                           course. AMA Bank is Web Application using Array
-                           Method -->
                            An application that allows users to transfer money,
                            request money and closed account. This is one of the
                            web application that I built after finishing course
                            from udemy
                         </p>
+
                         <div class="project__link">
                            <a
                               href="https://ama-bank.vercel.app/"
@@ -309,12 +364,13 @@
                      </div>
                   </div>
                </article>
-               <article class="project">
-                  <img
-                     src="./images/TRIUMPHGYM.png"
+               <article class="project project--3">
+                  <!-- <img
+                     src="./images/Gym.png"
                      alt="BMQ gym-website"
                      class="project__img"
-                  />
+                  /> -->
+                  <span class="project__effects"></span>
                   <div class="project__overlay">
                      <div class="project__overlay__desc">
                         <div class="project__title">TRIUMPH GYM</div>
@@ -323,6 +379,7 @@
                            with a client side email, login and signup
                            validation.
                         </p>
+
                         <div class="project__link">
                            <a
                               href="https://bmq-gym-website-benjoquilario.vercel.app/"
