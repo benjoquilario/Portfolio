@@ -5,7 +5,7 @@ class App {
    constructor() {
       this.vars();
       this.setupEvents();
-      this._skipToContent.focus();
+      
    }
 
    vars() {
