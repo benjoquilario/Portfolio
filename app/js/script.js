@@ -3,12 +3,11 @@ class App {
    _skipToContent = document.querySelector('.skip-to-content-link');
 
    constructor() {
-      this.vars();
+      this.varSelectors();
       this.setupEvents();
-      
    }
 
-   vars() {
+   varSelectors() {
       this.selectors = {
          btnMenu: '.btn--menu',
          headerMenu: '.header__menu',
@@ -51,13 +50,10 @@ class App {
       return true;
    }
 
-   loadEvents() {}
-
    setupEvents() {
       this.btnMenu.addEventListener('click', this.toggle.bind(this));
       this.headerList.addEventListener('click', this.hideMenu.bind(this));
       this.headerLogo.addEventListener('click', this.hideMenu.bind(this));
-
       this.headerMenu.addEventListener('click', this.smoothScroll.bind(this));
       this.btnBlue.addEventListener('click', () => {
          document
@@ -71,9 +67,7 @@ class App {
             this.hideNav();
          }
       });
-
       window.addEventListener('load', this.showAnimation.bind(this));
-
       this.fadeInSection();
       this.stickyNav();
    }
