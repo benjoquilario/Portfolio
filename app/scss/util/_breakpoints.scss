@@ -61,3 +61,15 @@ $breakpoints-down: (
       z-index: 1;
    }
 }
+
+@mixin clearfix {
+   &::before,
+   &::after {
+      content: '';
+      display: table;
+   }
+
+   &::after {
+      clear: both;
+   }
+}

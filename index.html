@@ -35,13 +35,6 @@
                   aria-label="menu toggle"
                   aria-expanded="false"
                >
-                  <!-- <img
-                     src="./images/icon-hamburger.svg"
-                     alt="menu toggler"
-                     class="btn__icon"
-                     style="color: #b92222"
-                  /> -->
-
                   <span class="btn--menu--bar"></span>
                   <span class="btn--menu--bar"></span>
                   <span class="btn--menu--bar"></span>
@@ -107,7 +100,9 @@
                   </div>
                </div>
                <div class="hero__image">
-                  <img src="./images/me.jpg" alt="Benjo Quilario" />
+                  <figure class="hero__fig">
+                     <img src="./images/me.jpg" alt="Benjo Quilario" />
+                  </figure>
                </div>
             </div>
          </section>
@@ -207,69 +202,119 @@
                   <h2 class="heading heading--xl">Skills</h2>
                   <div class="skills__container container">
                      <div class="skills__tech">
-                        <h3 class="heading heading--l">Languages</h3>
-                        <div class="skills__names">
-                           <img
-                              src="./images/HTML5_logo_and_wordmark.svg"
-                              alt="HTML5"
-                           />
-                           <span class="skill__name">HTML5</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-css3-alt icon__skills"></i> -->
-                           <img src="./images/CSS.3.svg" alt="CSS3" />
-                           <span class="skill__name">CSS3</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-js icon__skills"></i> -->
-                           <img
-                              src="./images/Unofficial_JavaScript_logo_2.svg"
-                              alt="JavaScript"
-                           />
-                           <span class="skill__name">JavaScript</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-sass icon__skills"></i> -->
-                           <img
-                              src="./images/Sass_Logo_Color.svg"
-                              alt="Sass/Scss"
-                           />
-                           <span class="skill__name">Sass/Scss</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-sass icon__skills"></i> -->
-                           <img src="./images/React.svg" alt="React" />
-                           <span class="skill__name">React</span>
-                        </div>
+                        <div class="tech__container">
+                           <div>
+                              <h3 class="heading heading--l">Frontend</h3>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/HTML5_logo_and_wordmark.svg"
+                                    alt="HTML5"
+                                 />
+                                 <span class="skill__name">HTML5</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img src="./images/CSS.3.svg" alt="CSS3" />
+                                 <span class="skill__name">CSS3</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/Unofficial_JavaScript_logo_2.svg"
+                                    alt="JavaScript"
+                                 />
+                                 <span class="skill__name">JavaScript</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/Sass_Logo_Color.svg"
+                                    alt="Sass/Scss"
+                                 />
+                                 <span class="skill__name">Sass/Scss</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img src="./images/React.svg" alt="React" />
+                                 <span class="skill__name">React</span>
+                              </div>
+                           </div>
+                           <!--
+                           <div>
+                              <h3 class="heading heading--l">Backend</h3>
+                              <div class="skills__names">
+                                 <img src="./images/nodejs.svg" alt="node js" />
+                                 <span class="skill__name">NodeJS</span>
+                              </div>
+                              <div class="skills__names">
+                                 <
+                                 <img
+                                    src="./images/express-.svg"
+                                    alt="Express"
+                                 />
+                                 <span class="skill__name">Express</span>
+                              </div>
+                              <div class="skills__names">
+                                 
+                                 <img
+                                    src="./images/mongodb.svg"
+                                    alt="MongoDB"
+                                 />
+                                 <span class="skill__name">MongoDB</span>
+                              </div>
+                           </div>
+                        --></div>
                      </div>
                      <div class="skills__tools">
                         <h3 class="heading heading--l">Tools</h3>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-git-alt icon__skills"></i> -->
-                           <img src="./images/Git_icon.svg" alt="Git" />
-                           <span class="skill__name">Git</span>
-                        </div>
-                        <div class="skills__names">
-                           <img
-                              src="./images/Font_Awesome_5_brands_github-square.svg"
-                              alt="Github"
-                           />
-                           <span class="skill__name">Github</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-npm icon__skills"></i> -->
-                           <img src="./images/Npm-logo.svg" alt="NPM" />
-                           <span class="skill__name">NPM</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-npm icon__skills"></i> -->
-                           <img src="./images/netlify.svg" alt="Netlify" />
-                           <span class="skill__name">Netlify</span>
-                        </div>
-                        <div class="skills__names">
-                           <!-- <i class="fab fa-npm icon__skills"></i> -->
-                           <img src="./images/vs-code.svg" alt="VS Code" />
-                           <span class="skill__name">VS Code</span>
+                        <div class="tools__container">
+                           <div>
+                              <div class="skills__names">
+                                 <img src="./images/Git_icon.svg" alt="Git" />
+                                 <span class="skill__name">Git</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/Font_Awesome_5_brands_github-square.svg"
+                                    alt="Github"
+                                 />
+                                 <span class="skill__name">Github</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img src="./images/Npm-logo.svg" alt="NPM" />
+                                 <span class="skill__name">NPM</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/netlify.svg"
+                                    alt="Netlify"
+                                 />
+                                 <span class="skill__name">Netlify</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/vs-code.svg"
+                                    alt="VS Code"
+                                 />
+                                 <span class="skill__name">VS Code</span>
+                              </div>
+                           </div>
+                           <div>
+                              <div class="skills__names">
+                                 <img src="./images/parcel.png" alt="VS Code" />
+                                 <span class="skill__name">Parcel</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/babeljs-icon.svg"
+                                    alt="VS Code"
+                                 />
+                                 <span class="skill__name">Babel</span>
+                              </div>
+                              <div class="skills__names">
+                                 <img
+                                    src="./images/figma-icon.svg"
+                                    alt="VS Code"
+                                 />
+                                 <span class="skill__name">Figma</span>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
@@ -280,11 +325,6 @@
             <h2 class="heading heading--xl">Featured Projects</h2>
             <div class="projects__container container section__select">
                <article class="project project--1">
-                  <!-- <img
-                     src="./images/D-anime.png"
-                     alt="BMQ gym-website"
-                     class="project__img"
-                  /> -->
                   <span class="project__effects"></span>
                   <div class="project__overlay">
                      <div class="project__overlay__desc">
@@ -325,11 +365,6 @@
                   </div>
                </article>
                <article class="project project--2">
-                  <!-- <img
-                     src="./images/AMAUI.png"
-                     alt="AMA bank"
-                     class="project__img" -->
-                  <!-- /> -->
                   <span class="project__effects"></span>
                   <div class="project__overlay">
                      <div class="project__overlay__desc">
@@ -365,11 +400,6 @@
                   </div>
                </article>
                <article class="project project--3">
-                  <!-- <img
-                     src="./images/Gym.png"
-                     alt="BMQ gym-website"
-                     class="project__img"
-                  /> -->
                   <span class="project__effects"></span>
                   <div class="project__overlay">
                      <div class="project__overlay__desc">

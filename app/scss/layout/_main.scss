@@ -31,12 +31,14 @@
 
    &__image {
       position: relative;
+      z-index: 5;
       img {
          position: relative;
          transform: translateY(-60px);
-
-         @include imageInit;
-         @include shadowOverlay;
+         object-fit: cover;
+         height: 100%;
+         width: 100%;
+         transition: all 0.3s;
 
          @media screen and (max-width: 768px) {
             transform: translateY(0);
@@ -59,6 +61,30 @@
          }
       }
    }
+
+   &__fig {
+      position: relative;
+      overflow: hidden;
+      backface-visibility: hidden;
+      transform-origin: top;
+
+      &::before {
+         content: '';
+         display: block;
+         height: 100%;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background-image: linear-gradient(to bottom, #b92222, transparent);
+         z-index: -1;
+         transform: translateY(-60px);
+
+         @media screen and (max-width: 768px) {
+            transform: translateY(0);
+         }
+      }
+   }
 }
 
 .about {
@@ -67,7 +93,6 @@
    &__container {
       display: flex;
       flex-direction: column;
-      grid-gap: 29px;
       justify-items: center;
       align-items: center;
 
@@ -146,13 +171,12 @@
 
    &__names {
       display: grid;
-      grid-template-columns: 60px 1fr;
+      grid-template-columns: 49px 1fr;
       align-items: center;
       width: 100%;
-      font-size: clamp(12px, 3vw, 15px);
       font-weight: 500;
       text-align: left;
-      padding: 10px 14px;
+      padding: 10px;
       margin-bottom: 15px;
       box-shadow: 0 0 6px 2px rgba(48, 48, 48, 0.1);
 
@@ -162,7 +186,7 @@
       }
 
       .skill__name {
-         font-size: 14px;
+         font-size: clamp(12px, 4vw, 13px);
       }
    }
 }
@@ -186,6 +210,7 @@
    position: relative;
    overflow: hidden;
    height: 380px;
+   box-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
    z-index: 1;
 
    @media screen and (max-width: 568px) {
@@ -210,7 +235,7 @@
    }
 
    &--1::before {
-      background-image: url('../../../images/D-anime.png');
+      background-image: url('../../../images/D-Anime2.png');
    }
 
    &--2::before {
@@ -218,7 +243,7 @@
    }
 
    &--3::before {
-      background-image: url('../../../images/Gym.png');
+      background-image: url('../../../images/Gym1.png');
    }
 
    &__img {
@@ -337,5 +362,16 @@
       font-weight: 600;
       letter-spacing: 1px;
       margin-bottom: 6px;
+   }
+}
+
+.tools__container,
+.tech__container {
+   display: flex;
+   gap: 20px;
+
+   @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 0px;
    }
 }
