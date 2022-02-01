@@ -61,30 +61,6 @@
          }
       }
    }
-
-   &__fig {
-      position: relative;
-      overflow: hidden;
-      backface-visibility: hidden;
-      transform-origin: top;
-
-      &::before {
-         content: '';
-         display: block;
-         height: 100%;
-         width: 100%;
-         position: absolute;
-         top: 0;
-         left: 0;
-         background-image: linear-gradient(to bottom, #b92222, transparent);
-         z-index: -1;
-         transform: translateY(-60px);
-
-         @media screen and (max-width: 768px) {
-            transform: translateY(0);
-         }
-      }
-   }
 }
 
 .about {
@@ -243,7 +219,15 @@
    }
 
    &--3::before {
-      background-image: url('../../../images/Gym1.png');
+      background-image: url('../../../images/Gym.png');
+   }
+
+   &--4::before {
+      background-image: url('../../../images/frontendmentor.png');
+   }
+
+   &--5::before {
+      background-image: url('../../../images/image-2.png');
    }
 
    &__img {
@@ -301,6 +285,18 @@
 
    &__description {
       font-size: clamp(13px, 3vw, 16px);
+   }
+
+   &__use {
+      margin-top: 5px;
+
+      &__language {
+         background-color: var(--red);
+         font-size: clamp(11px, 3vw, 13px);
+         padding: 1px 3px;
+         border-radius: 4px;
+         margin-top: 5px;
+      }
    }
 
    &__view,
