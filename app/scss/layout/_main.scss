@@ -24,7 +24,7 @@
 
       @media screen and (min-width: 769px) {
          align-items: flex-start;
-         flex: 1 0 55%;
+         flex: 1 0 50%;
          text-align: left;
       }
    }
@@ -211,7 +211,7 @@
    }
 
    &--1::before {
-      background-image: url('../../../images/D-Anime2.png');
+      background-image: url('../../../images/d-anime.png');
    }
 
    &--2::before {
@@ -219,7 +219,7 @@
    }
 
    &--3::before {
-      background-image: url('../../../images/Gym.png');
+      background-image: url('../../../images/Triumph.png');
    }
 
    &--4::before {
