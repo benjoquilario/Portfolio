@@ -11,7 +11,7 @@ Others are welcome to use this code as a base for their own projects, but with e
 ### How to use
 
 1. Clone this repo to a local directory on your machine
-2. Run `npm run gulp` or write `gulp` in the terminal and wait for `localhost:3000`
+2. Run `npm run gulp` or write `gulp` in the terminal and wait for `localhost`
 
 ### Screenshot
 

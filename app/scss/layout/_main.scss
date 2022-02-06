@@ -230,6 +230,10 @@
       background-image: url('../../../images/image-2.png');
    }
 
+   &--6::before {
+      background-image: url('../../../images/D-arch.png');
+   }
+
    &__img {
       display: block;
       min-height: 100%;
