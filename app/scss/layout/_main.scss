@@ -7,10 +7,10 @@
    &__container {
       position: relative;
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
 
       @media screen and (min-width: 769px) {
-         justify-content: center;
+         justify-content: space-evenly;
          align-items: center;
          flex-direction: row;
       }
@@ -19,22 +19,26 @@
    &__text {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       text-align: center;
+      margin-top: 25px;
 
       @media screen and (min-width: 769px) {
          align-items: flex-start;
-         flex: 1 0 50%;
+         //flex: 1 0 50%;
          text-align: left;
+         margin-top: 0;
       }
    }
 
    &__image {
       position: relative;
       z-index: 5;
+      align-self: flex-start;
+
       img {
          position: relative;
-         transform: translateY(-60px);
+         // transform: translateY(-60px);
          object-fit: cover;
          height: 100%;
          width: 100%;
@@ -61,6 +65,18 @@
          }
       }
    }
+
+   &__fig {
+      height: 135px;
+      width: 135px;
+      padding: 5px;
+      border-radius: 1rem;
+      box-shadow: 0 10px 15px -7px rgba(0, 0, 0, 0.215);
+
+      img {
+         border-radius: 1rem;
+      }
+   }
 }
 
 .about {
@@ -76,7 +92,6 @@
          display: grid;
          grid-template-columns: 1fr 1.4fr;
          grid-template-rows: 290px 1fr;
-         margin-top: 60px;
       }
    }
 
@@ -147,7 +162,7 @@
 
    &__names {
       display: grid;
-      grid-template-columns: 49px 1fr;
+      grid-template-columns: 45px 1fr;
       align-items: center;
       width: 100%;
       font-weight: 500;
@@ -162,7 +177,7 @@
       }
 
       .skill__name {
-         font-size: clamp(12px, 4vw, 13px);
+         font-size: clamp(11px, 3vw, 12px);
       }
    }
 }
@@ -185,7 +200,7 @@
 .project {
    position: relative;
    overflow: hidden;
-   height: 380px;
+   height: 350px;
    box-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
    z-index: 1;
 
@@ -211,7 +226,7 @@
    }
 
    &--1::before {
-      background-image: url('../../../images/d-anime.png');
+      background-image: url('../../../images/D-anime.png');
    }
 
    &--2::before {

@@ -29,6 +29,7 @@
       align-items: center;
       height: 51px;
       transition: all 350ms ease-in-out;
+      max-width: 740px;
    }
 
    &__logo {
@@ -117,7 +118,7 @@
 
       @media screen and (min-width: 769px) {
          color: var(--black);
-         font-size: 15px;
+         font-size: 14px;
 
          &:hover {
             color: var(--red);

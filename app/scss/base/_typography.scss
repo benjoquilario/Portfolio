@@ -26,10 +26,11 @@ p {
 
    &--xxl {
       @extend .heading;
-      font-size: clamp(34px, 7vw, 59px);
+      font-size: clamp(30px, 7vw, 38px);
       max-width: 450px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
    }
 
    &--xl {
@@ -79,6 +80,7 @@ p {
 
    &--footer {
       font-size: 40px;
+      color: var(--white);
    }
 }
 
@@ -92,14 +94,14 @@ p {
 
    &--l {
       @extend .paragraph;
-      font-size: clamp(23px, 3vw, 27px);
+      font-size: clamp(20px, 3vw, 21px);
       margin-bottom: 26px;
    }
 
    &--about {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 17px;
-      line-height: 28px;
+      line-height: 24px;
    }
 }
 
