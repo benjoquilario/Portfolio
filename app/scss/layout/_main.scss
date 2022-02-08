@@ -87,6 +87,7 @@
       flex-direction: column;
       justify-items: center;
       align-items: center;
+      gap: 14px;
 
       @media screen and (min-width: 769px) {
          display: grid;
@@ -230,7 +231,7 @@
    }
 
    &--2::before {
-      background-image: url('../../../images/AMAUI.png');
+      background-image: url('../../../images/ama.png');
    }
 
    &--3::before {
@@ -242,7 +243,7 @@
    }
 
    &--5::before {
-      background-image: url('../../../images/image-2.png');
+      background-image: url('../../../images/D-movie.png');
    }
 
    &--6::before {
