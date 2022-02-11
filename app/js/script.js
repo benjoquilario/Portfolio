@@ -70,6 +70,7 @@ class App {
       window.addEventListener('load', this.showAnimation.bind(this));
       this.fadeInSection();
       this.stickyNav();
+      this.getWeekday();
    }
 
    showAnimation() {
@@ -169,6 +170,22 @@ class App {
       }, this.options);
 
       this.heroObserver.observe(this.hero);
+   }
+
+   getWeekday() {
+      const weekday = [
+         'Sunday',
+         'Monday',
+         'Tuesday',
+         'Wednesday',
+         'Thursday',
+         'Friday',
+         'Saturday',
+      ];
+      const date = new Date();
+      document.querySelector('.footer__text').textContent = `Happy ${
+         weekday[date.getDay()]
+      }! • Made with ❤ by Benjo M. Quilario - All Right Reserved. 2022`;
    }
 }
 

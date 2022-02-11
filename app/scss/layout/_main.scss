@@ -91,8 +91,11 @@
 
       @media screen and (min-width: 769px) {
          display: grid;
-         grid-template-columns: 1fr 1.4fr;
-         grid-template-rows: 290px 1fr;
+         grid-template-columns: 1fr 1fr;
+         grid-template-areas:
+            'about about'
+            'profile skill';
+         grid-template-rows: auto;
       }
    }
 
@@ -106,6 +109,14 @@
       opacity: 0;
       transform: translateY(9rem);
       transition: all 350ms ease-in-out;
+   }
+
+   &__text {
+      grid-area: about;
+   }
+
+   &__profile {
+      grid-area: profile;
    }
 }
 
@@ -146,6 +157,7 @@
 .skills {
    position: relative;
    padding: 0 18px;
+   grid-area: skill;
 
    &__container {
       display: flex;
@@ -187,30 +199,89 @@
    padding: 170px 28px;
 
    &__container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: auto;
-      grid-gap: 40px;
-      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 720px;
+   }
 
-      @media screen and (max-width: 768px) {
-         grid-template-columns: 1fr;
+   &__project {
+      margin-bottom: 70px;
+   }
+
+   &__header,
+   &__link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @media screen and (max-width: 500px) {
+         flex-direction: column;
+         align-items: flex-start;
       }
+   }
+
+   &__header,
+   &__desc {
+      margin-bottom: 15px;
+   }
+
+   &__link {
+      display: flex;
+      gap: 7px;
+   }
+
+   &__info {
+      margin-bottom: 35px;
+   }
+
+   &__tools {
+      span {
+         color: #fff;
+         background-color: var(--red);
+         display: inline-block;
+         padding: 0.25em 0.4em;
+         font-size: 75%;
+         font-weight: 700;
+         line-height: 1;
+         text-align: center;
+         white-space: nowrap;
+         vertical-align: baseline;
+         -webkit-border-radius: 0.25rem;
+         border-radius: 0.25rem;
+      }
+   }
+
+   &__desc {
+      font-size: clamp(14px, 2vw, 15px);
+      line-height: 24px;
+   }
+
+   &__title {
+      font-size: clamp(18px, 3vw, 21px);
+      font-weight: 700;
    }
 }
 .project {
    position: relative;
    overflow: hidden;
-   height: 350px;
+   height: 340px;
    box-shadow: 0 0 5px rgb(0, 0, 0, 0.25);
-   z-index: 1;
+   max-width: 60%;
+   width: 100%;
+   margin-left: auto;
+
+   @media screen and (max-width: 768px) {
+      max-width: 100%;
+   }
 
    @media screen and (max-width: 568px) {
-      height: 290px;
+      height: 280px;
    }
 
    @media screen and (max-width: 411px) {
-      height: 250px;
+      height: 239px;
    }
 
    &::before {
@@ -223,7 +294,7 @@
       transition: transform 500ms ease-in;
       background-repeat: no-repeat;
       background-size: 100% 100%;
-      background-position: center;
+      background-position: right;
    }
 
    &--1::before {
@@ -250,82 +321,13 @@
       background-image: url('../../../images/D-arch.png');
    }
 
-   &__img {
-      display: block;
-      min-height: 100%;
-      width: 100%;
-      border-radius: 8px;
-   }
-
-   &__effects {
-      @include imageInit;
-      @include shadowOverlay;
-   }
-
-   &__overlay {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transition: opacity 0.35s;
-      background: rgba(0, 0, 0, 0.815);
-      color: var(--white);
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      z-index: 2;
-
-      &:hover {
-         opacity: 1;
-         cursor: pointer;
-         z-index: 2;
-
-         & > * {
-            transform: translateX(0px);
-            transition: transform 0.35s;
-         }
-      }
-
-      & > * {
-         transform: translateX(-20px);
-         transition: transform 0.35s;
-      }
-
-      &__desc {
-         max-width: 100%;
-         margin: auto 0;
-         padding: 0.5rem 2rem;
-
-         @media screen and (max-width: 768px) {
-            padding: 0.5rem 1rem;
-         }
-      }
-   }
-
-   &__description {
-      font-size: clamp(13px, 3vw, 16px);
-   }
-
-   &__use {
-      margin-top: 5px;
-
-      &__language {
-         background-color: var(--red);
-         font-size: clamp(11px, 3vw, 13px);
-         padding: 1px 3px;
-         border-radius: 4px;
-         margin-top: 5px;
-      }
-   }
-
    &__view,
    &__code {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 38px;
-      font-size: 14px;
+      height: 34px;
+      font-size: 12px;
       transition: all 0.3s ease;
       border-radius: 7px;
 
