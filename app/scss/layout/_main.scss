@@ -55,13 +55,17 @@
       margin-top: 60px;
 
       &__link {
-         color: var(--black);
-         font-size: 25px;
          margin: 0 6px;
          transition: all 350ms ease-in-out;
+         display: flex;
+         justify-content: center;
+         align-items: center;
 
          &:hover {
-            color: var(--red);
+            svg path {
+               transition: all 350ms ease-in-out;
+               fill: var(--red);
+            }
          }
       }
    }

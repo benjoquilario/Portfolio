@@ -3,7 +3,7 @@
 .footer {
    position: relative;
    background-color: var(--black);
-   padding: 1rem 0;
+   padding: 1rem 8px;
 
    &__container {
       display: flex;
@@ -37,6 +37,6 @@
       color: var(--white);
       margin-top: 7px;
       text-align: center;
-      font-size: clamp(13px, 2vw, 15px);
+      font-size: clamp(12px, 2vw, 13px);
    }
 }
