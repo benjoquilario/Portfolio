@@ -301,6 +301,21 @@
       background-position: right;
    }
 
+   &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+         to right,
+         rgba(0, 0, 0, 0.4),
+         transparent
+      );
+      z-index: -1;
+   }
+
    &--1::before {
       background-image: url('../../../images/D-anime.png');
    }

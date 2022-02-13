@@ -19,706 +19,733 @@
       <title>Benjo Quilario</title>
       <link rel="stylesheet" href="./dist/style.css" />
       <script defer src="./dist/script.js"></script>
+
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+         async
+         src="https://www.googletagmanager.com/gtag/js?id=UA-220163690-1"
+      ></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+            dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+
+         gtag('config', 'UA-220163690-1');
+      </script>
    </head>
    <body class="loading">
-      <div class="overlay"></div>
-      <a href="#about" class="skip-to-content-link">Skip to content</a>
-      <header class="header">
-         <div class="header__container container">
-            <a href="#" class="header__logo">
-               BM<span class="header__logo--letter">Q </span>
-               />
-            </a>
-            <nav class="header__nav header__nav--open" aria-label="primary">
-               <button
-                  class="btn btn--menu active"
-                  aria-label="menu toggle"
-                  aria-expanded="false"
-               >
-                  <span class="btn--menu--bar"></span>
-                  <span class="btn--menu--bar"></span>
-                  <span class="btn--menu--bar"></span>
-               </button>
-               <div class="header__menu">
-                  <ul class="header__list">
-                     <li class="header__item">
-                        <a href="#about" class="header__link">About</a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#skills" class="header__link">Skills</a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#projects" class="header__link">Project</a>
-                     </li>
+      <div class="main-container">
+         <a href="#about" class="skip-to-content-link">Skip to content</a>
+         <header class="header">
+            <div class="header__container container">
+               <a href="#" class="header__logo">
+                  BM<span class="header__logo--letter">Q </span>
+                  />
+               </a>
+               <nav class="header__nav header__nav--open" aria-label="primary">
+                  <button
+                     class="btn btn--menu active"
+                     aria-label="menu toggle"
+                     aria-expanded="false"
+                  >
+                     <span class="btn--menu--bar"></span>
+                     <span class="btn--menu--bar"></span>
+                     <span class="btn--menu--bar"></span>
+                  </button>
+                  <div class="header__menu">
+                     <ul class="header__list">
+                        <li class="header__item">
+                           <a href="#about" class="header__link">About</a>
+                        </li>
+                        <li class="header__item">
+                           <a href="#skills" class="header__link">Skills</a>
+                        </li>
+                        <li class="header__item">
+                           <a href="#projects" class="header__link">Project</a>
+                        </li>
 
-                     <li class="header__item">
+                        <li class="header__item">
+                           <a
+                              href="https://github.com/benjoquilario"
+                              class="header__link"
+                              aria-label="github"
+                              ><i class="fab fa-github"></i
+                           ></a>
+                        </li>
+                        <li class="header__item">
+                           <a href="#contact" class="header__link">Contact</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <main>
+            <section class="hero" id="hero">
+               <div class="hero__container container">
+                  <div class="hero__text">
+                     <h1 class="heading heading--xxl">
+                        <span class="heading__name">Benjo Quilario</span>
+                     </h1>
+                     <p class="paragraph paragraph--l">
+                        Front Developer from
+                        <span class="paragraph__name">PH</span>
+                     </p>
+                     <button class="btn btn--start btn--blue">
+                        MORE ABOUT ME
+                     </button>
+                     <div class="hero__icon">
+                        <a
+                           href="https://twitter.com/iam_benjo"
+                           target="_blank"
+                           class="hero__icon__link"
+                           aria-label="github"
+                           ><svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fab"
+                              data-icon="twitter"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 512 512"
+                              width="20"
+                           >
+                              <path
+                                 fill="#0f172a"
+                                 d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                              ></path>
+                           </svg>
+                        </a>
                         <a
                            href="https://github.com/benjoquilario"
-                           class="header__link"
+                           target="_blank"
+                           class="hero__icon__link"
                            aria-label="github"
-                           ><i class="fab fa-github"></i
-                        ></a>
-                     </li>
-                     <li class="header__item">
-                        <a href="#contact" class="header__link">Contact</a>
-                     </li>
-                  </ul>
-               </div>
-            </nav>
-         </div>
-      </header>
-      <main>
-         <section class="hero" id="hero">
-            <div class="hero__container container">
-               <div class="hero__text">
-                  <h1 class="heading heading--xxl">
-                     <span class="heading__name">Benjo Quilario</span>
-                  </h1>
-                  <p class="paragraph paragraph--l">
-                     Front Developer from
-                     <span class="paragraph__name">PH</span>
-                  </p>
-                  <button class="btn btn--start btn--blue">
-                     MORE ABOUT ME
-                  </button>
-                  <div class="hero__icon">
-                     <a
-                        href="https://twitter.com/iam_benjo"
-                        target="_blank"
-                        class="hero__icon__link"
-                        aria-label="github"
-                        ><svg
-                           aria-hidden="true"
-                           focusable="false"
-                           data-prefix="fab"
-                           data-icon="twitter"
-                           role="img"
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 512 512"
-                           width="20"
-                        >
-                           <path
-                              fill="#0f172a"
-                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                           ></path>
-                        </svg>
-                     </a>
-                     <a
-                        href="https://github.com/benjoquilario"
-                        target="_blank"
-                        class="hero__icon__link"
-                        aria-label="github"
-                        ><svg
-                           aria-hidden="true"
-                           focusable="false"
-                           data-prefix="fab"
-                           data-icon="github"
-                           role="img"
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 496 512"
-                           width="20"
-                        >
-                           <path
-                              fill="#0f172a"
-                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                           ></path>
-                        </svg>
-                     </a>
-                     <a
-                        href="https://www.linkedin.com/in/benjo-quilario-415a351bb/"
-                        target="_blank"
-                        class="hero__icon__link"
-                        aria-label="linkedin"
-                        ><svg
-                           aria-hidden="true"
-                           focusable="false"
-                           data-prefix="fab"
-                           data-icon="linkedin"
-                           role="img"
-                           xmlns="http://www.w3.org/2000/svg"
-                           viewBox="0 0 448 512"
-                           width="20"
-                        >
-                           <path
-                              fill="#0f172a"
-                              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                           ></path>
-                        </svg>
-                     </a>
-                     <a
-                        href="mailto:benjoquilario@gmail.com"
-                        target="_blank"
-                        class="hero__icon__link"
-                        aria-label="email"
-                        ><svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           width="24"
-                           height="24"
-                           viewBox="0 0 24 24"
-                        >
-                           <path
-                              d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
-                           />
-                        </svg>
-                     </a>
+                           ><svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fab"
+                              data-icon="github"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 496 512"
+                              width="20"
+                           >
+                              <path
+                                 fill="#0f172a"
+                                 d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                              ></path>
+                           </svg>
+                        </a>
+                        <a
+                           href="https://www.linkedin.com/in/benjo-quilario-415a351bb/"
+                           target="_blank"
+                           class="hero__icon__link"
+                           aria-label="linkedin"
+                           ><svg
+                              aria-hidden="true"
+                              focusable="false"
+                              data-prefix="fab"
+                              data-icon="linkedin"
+                              role="img"
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512"
+                              width="20"
+                           >
+                              <path
+                                 fill="#0f172a"
+                                 d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                              ></path>
+                           </svg>
+                        </a>
+                        <a
+                           href="mailto:benjoquilario@gmail.com"
+                           target="_blank"
+                           class="hero__icon__link"
+                           aria-label="email"
+                           ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                           >
+                              <path
+                                 d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                              />
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="hero__image">
+                     <figure class="hero__fig">
+                        <img src="./images/me2.jpg" alt="Benjo Quilario" />
+                     </figure>
                   </div>
                </div>
-               <div class="hero__image">
-                  <figure class="hero__fig">
-                     <img src="./images/me2.jpg" alt="Benjo Quilario" />
-                  </figure>
-               </div>
-            </div>
-         </section>
-         <section class="about section__select" id="about">
-            <h2 class="heading heading--xl">About</h2>
-            <h3 class="heading heading--intro">Let me introduce myself.</h3>
-            <div class="about__container container">
-               <div class="section__select about__text">
-                  <p class="paragraph paragraph--about">
-                     <!-- I'm a self-taught passionate Frontend developer from
+            </section>
+            <section class="about section__select" id="about">
+               <h2 class="heading heading--xl">About</h2>
+               <h3 class="heading heading--intro">Let me introduce myself.</h3>
+               <div class="about__container container">
+                  <div class="section__select about__text">
+                     <p class="paragraph paragraph--about">
+                        <!-- I'm a self-taught passionate Frontend developer from
                      Philippines PH. -->
 
-                     Hi there, my name is Benjo M Quilario from Quezon City. I
-                     specialized in web development and UX/UI designs. My web
-                     development journey started during quarantine pandemic. One
-                     time when surfing a web, I accidentally clicked the inspect
-                     elements in a browser and got curious about what was
-                     written in it. Having no idea what is it. I started doing
-                     some experiment editing styles of websites and thus started
-                     my curiosity in Frontend. <br />
-                     <br />
-                     Now this website is running with code using HTML5,
-                     CSS3/SCSS, Gulp and Vanilla Javascript
-                     <br />
-                     <a
-                        href="https://github.com/benjoquilario/Portfolio"
-                        target="_blank"
-                        class="btn btn--more"
+                        Hi there, my name is Benjo M Quilario from Quezon City.
+                        I specialized in web development and UX/UI designs. My
+                        web development journey started during quarantine
+                        pandemic. One time when surfing a web, I accidentally
+                        clicked the inspect elements in a browser and got
+                        curious about what was written in it. Having no idea
+                        what is it. I started doing some experiment editing
+                        styles of websites and thus started my curiosity in
+                        Frontend. <br />
+                        <br />
+                        Now this website is running with code using HTML5,
+                        CSS3/SCSS, Gulp and Vanilla Javascript
+                        <br />
+                        <a
+                           href="https://github.com/benjoquilario/Portfolio"
+                           target="_blank"
+                           class="btn btn--more"
+                        >
+                           <span class="learnMore__text">View Source code</span>
+                           <span class="learnMore__icon">
+                              <svg
+                                 aria-hidden="true"
+                                 width="40"
+                                 height="12"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000"
+                                    fill-rule="nonzero"
+                                 />
+                              </svg>
+                           </span>
+                        </a>
+                     </p>
+                  </div>
+                  <div class="section__select about__profile">
+                     <h2 class="heading heading--xl">PROFILE</h2>
+                     <div class="about__profile__profile">
+                        <p class="paragraph paragraph--about">
+                           I'm a self-taught passionate Frontend developer from
+                           Philippines PH.
+                        </p>
+                        <p class="paragraph paragraph--about">
+                           I am second year student at AMA College University
+                           pursuing Bachelor of Science in Information
+                           Technology (BSIT). I
+                           <i><b>love coding</b></i
+                           >, <i><b>solving problems</b></i
+                           >, and <i><b>communicating with others people</b></i
+                           >. I enjoy being <i><b>challenged</b></i> and love
+                           working on projects that require working out of my
+                           comfort zone and skill set.
+                        </p>
+                        <p class="paragraph paragraph--about">
+                           Get in touch 👉 benjoquilario@gmail.com
+                        </p>
+                        <a href="#" class="btn btn--more">
+                           <span class="learnMore__text">Resume</span>
+                           <span class="learnMore__icon">
+                              <svg
+                                 aria-hidden="true"
+                                 width="40"
+                                 height="12"
+                                 xmlns="http://www.w3.org/2000/svg"
+                              >
+                                 <path
+                                    d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                                    fill="#000"
+                                    fill-rule="nonzero"
+                                 />
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="skills section__select" id="skills">
+                     <h2 class="heading heading--xl">Skills</h2>
+                     <div class="skills__container container">
+                        <div class="skills__tech">
+                           <div class="tech__container">
+                              <div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/HTML5_logo_and_wordmark.svg"
+                                       alt="HTML5"
+                                    />
+                                    <span class="skill__name">HTML5</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img src="./images/CSS.3.svg" alt="CSS3" />
+                                    <span class="skill__name">CSS3</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/Unofficial_JavaScript_logo_2.svg"
+                                       alt="JavaScript"
+                                    />
+                                    <span class="skill__name">JavaScript</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/Sass_Logo_Color.svg"
+                                       alt="Sass/Scss"
+                                    />
+                                    <span class="skill__name">Sass/Scss</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img src="./images/React.svg" alt="React" />
+                                    <span class="skill__name">React</span>
+                                 </div>
+                              </div>
+
+                              <div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/tailwindcss.svg"
+                                       alt="TailwindCSS"
+                                    />
+                                    <span class="skill__name">TailwindCSS</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/nodejs.svg"
+                                       alt="node js"
+                                    />
+                                    <span class="skill__name">NodeJS</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/express-.svg"
+                                       alt="Express"
+                                    />
+                                    <span class="skill__name">Express</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/mongodb.svg"
+                                       alt="MongoDB"
+                                    />
+                                    <span class="skill__name">MongoDB</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/Git_icon.svg"
+                                       alt="Git"
+                                    />
+                                    <span class="skill__name">Git</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="skills__tools">
+                           <div class="tools__container">
+                              <div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/Npm-logo.svg"
+                                       alt="NPM"
+                                    />
+                                    <span class="skill__name">NPM</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/Font_Awesome_5_brands_github-square.svg"
+                                       alt="Github"
+                                    />
+                                    <span class="skill__name">Github</span>
+                                 </div>
+
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/vs-code.svg"
+                                       alt="VS Code"
+                                    />
+                                    <span class="skill__name">VS Code</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/webpack.png"
+                                       alt="VS Code"
+                                    />
+                                    <span class="skill__name">Webpack</span>
+                                 </div>
+                                 <div class="skills__names">
+                                    <img
+                                       src="./images/figma-icon.svg"
+                                       alt="VS Code"
+                                    />
+                                    <span class="skill__name">Figma</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="projects section__select" id="projects">
+               <h2 class="heading heading--xl">Featured Projects</h2>
+               <div class="projects__container container section__select">
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">D-ARCH</h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://d-arch.netlify.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/D-Arch-Landing-Page"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           D-ARCH is a landing page website built with using
+                           react and style-componets, D-ARCH is a complete
+                           responsive in any devices
+                        </p>
+                        <div class="projects__tools">
+                           <span>React</span>
+                           <span>JSX</span>
+                           <span>React-Router-Dom</span>
+                           <span>Styled-components</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--6"></div>
+                     </div>
+                  </article>
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">D-MOVIE</h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://d-movie.netlify.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/D-MOVIE"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           D-MOVIE is an application built with react, where
+                           user will able to search there favorite movie and
+                           gives tons of information about that specific movie
+                        </p>
+                        <div class="projects__tools">
+                           <span>React</span>
+                           <span>JSX</span>
+                           <span>React-Router-Dom</span>
+                           <span>CSS3</span>
+                           <span>SCSS</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--5"></div>
+                     </div>
+                  </article>
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">D-ANIME</h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://d-anime.netlify.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/D-Anime"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           D-Anime is an app uses external APIs which is Jikan
+                           APIs . An application where user will able to search
+                           there favorite anime and gives tons of information
+                           about that specific anime
+                        </p>
+                        <div class="projects__tools">
+                           <span>HTML5</span>
+                           <span>CSS3</span>
+                           <span>JavaScript</span>
+                           <span>SCSS</span>
+                           <span>Parcel</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--1"></div>
+                     </div>
+                  </article>
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">TRIUMPH GYM</h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://triumph-benjo.netlify.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/TRIUMPH-GYM"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           TRIUMPH GYM Website is a gym landing page website
+                           with a client side email, login and signup
+                           validation.
+                        </p>
+                        <div class="projects__tools">
+                           <span>HTML5</span>
+                           <span>CSS3</span>
+                           <span>JavaScript</span>
+                           <span>SCSS</span>
+                           <span>Parcel</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--3"></div>
+                     </div>
+                  </article>
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">AMA BANK</h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://amabank-benjo.netlify.app/"
+                              class="project__view"
+                              target="_blank"
+                              id="focus"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/AMABank-Landing-page"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           An application that allows users to transfer money,
+                           request money and closed account. This is one of the
+                           web application that I built after finishing course
+                           from udemy
+                        </p>
+                        <div class="projects__tools">
+                           <span>React</span>
+                           <span>JSX</span>
+                           <span>CSS3</span>
+                           <span>SCSS</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--2"></div>
+                     </div>
+                  </article>
+                  <article class="projects__project section__select">
+                     <header class="projects__header">
+                        <h3 class="heading projects__title">
+                           FRONTENDMENTOR COMPILATION
+                        </h3>
+                        <div class="projects__link">
+                           <a
+                              href="https://frontendmentor-projects-vert.vercel.app/"
+                              class="project__view"
+                              id="focus"
+                              target="_blank"
+                              ><i
+                                 class="fas fa-external-link-alt icon__project"
+                              ></i>
+                              Visit site
+                           </a>
+                           <a
+                              href="https://github.com/benjoquilario/Frontendmentor-Projects"
+                              class="project__code"
+                              target="_blank"
+                              id="focus"
+                              ><i class="fab fa-github icon__project"></i>
+                              View Source code
+                           </a>
+                        </div>
+                     </header>
+                     <div class="projects__info">
+                        <p class="paragraph projects__desc">
+                           A collection of frontendmentor project that I've
+                           completed.
+                        </p>
+                        <div class="projects__tools">
+                           <span>JavaScript</span>
+                           <span>HTML</span>
+                           <span>CSS3</span>
+                           <span>SCSS</span>
+                        </div>
+                     </div>
+                     <div>
+                        <div class="project project--4"></div>
+                     </div>
+                  </article>
+               </div>
+            </section>
+         </main>
+         <footer class="footer" id="contact">
+            <div class="footer__container">
+               <div class="footer__link">
+                  <a
+                     href="https://www.facebook.com/Benjo.Add07"
+                     target="_blank"
+                     rel="noreferrer"
+                     class="footer__link__icon"
+                     aria-label="facebook"
+                     ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="facebook"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        width="20"
                      >
-                        <span class="learnMore__text">View Source code</span>
-                        <span class="learnMore__icon">
-                           <svg
-                              aria-hidden="true"
-                              width="40"
-                              height="12"
-                              xmlns="http://www.w3.org/2000/svg"
-                           >
-                              <path
-                                 d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                                 fill="#000"
-                                 fill-rule="nonzero"
-                              />
-                           </svg>
-                        </span>
-                     </a>
-                  </p>
-               </div>
-               <div class="section__select about__profile">
-                  <h2 class="heading heading--xl">PROFILE</h2>
-                  <div class="about__profile__profile">
-                     <p class="paragraph paragraph--about">
-                        I'm a self-taught passionate Frontend developer from
-                        Philippines PH.
-                     </p>
-                     <p class="paragraph paragraph--about">
-                        I am second year student at AMA College University
-                        pursuing Bachelor of Science in Information Technology
-                        (BSIT). I
-                        <i><b>love coding</b></i
-                        >, <i><b>solving problems</b></i
-                        >, and <i><b>communicating with others people</b></i
-                        >. I enjoy being <i><b>challenged</b></i> and love
-                        working on projects that require working out of my
-                        comfort zone and skill set.
-                     </p>
-                     <p class="paragraph paragraph--about">
-                        Get in touch 👉 benjoquilario@gmail.com
-                     </p>
-                     <a href="#" class="btn btn--more">
-                        <span class="learnMore__text">Resume</span>
-                        <span class="learnMore__icon">
-                           <svg
-                              aria-hidden="true"
-                              width="40"
-                              height="12"
-                              xmlns="http://www.w3.org/2000/svg"
-                           >
-                              <path
-                                 d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-                                 fill="#000"
-                                 fill-rule="nonzero"
-                              />
-                           </svg>
-                        </span>
-                     </a>
-                  </div>
-               </div>
-               <div class="skills section__select" id="skills">
-                  <h2 class="heading heading--xl">Skills</h2>
-                  <div class="skills__container container">
-                     <div class="skills__tech">
-                        <div class="tech__container">
-                           <div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/HTML5_logo_and_wordmark.svg"
-                                    alt="HTML5"
-                                 />
-                                 <span class="skill__name">HTML5</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img src="./images/CSS.3.svg" alt="CSS3" />
-                                 <span class="skill__name">CSS3</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/Unofficial_JavaScript_logo_2.svg"
-                                    alt="JavaScript"
-                                 />
-                                 <span class="skill__name">JavaScript</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/Sass_Logo_Color.svg"
-                                    alt="Sass/Scss"
-                                 />
-                                 <span class="skill__name">Sass/Scss</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img src="./images/React.svg" alt="React" />
-                                 <span class="skill__name">React</span>
-                              </div>
-                           </div>
+                        <path
+                           fill="currentColor"
+                           d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        ></path>
+                     </svg>
+                  </a>
 
-                           <div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/tailwindcss.svg"
-                                    alt="TailwindCSS"
-                                 />
-                                 <span class="skill__name">TailwindCSS</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img src="./images/nodejs.svg" alt="node js" />
-                                 <span class="skill__name">NodeJS</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/express-.svg"
-                                    alt="Express"
-                                 />
-                                 <span class="skill__name">Express</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/mongodb.svg"
-                                    alt="MongoDB"
-                                 />
-                                 <span class="skill__name">MongoDB</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img src="./images/Git_icon.svg" alt="Git" />
-                                 <span class="skill__name">Git</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="skills__tools">
-                        <div class="tools__container">
-                           <div>
-                              <div class="skills__names">
-                                 <img src="./images/Npm-logo.svg" alt="NPM" />
-                                 <span class="skill__name">NPM</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/Font_Awesome_5_brands_github-square.svg"
-                                    alt="Github"
-                                 />
-                                 <span class="skill__name">Github</span>
-                              </div>
-
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/vs-code.svg"
-                                    alt="VS Code"
-                                 />
-                                 <span class="skill__name">VS Code</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/webpack.png"
-                                    alt="VS Code"
-                                 />
-                                 <span class="skill__name">Webpack</span>
-                              </div>
-                              <div class="skills__names">
-                                 <img
-                                    src="./images/figma-icon.svg"
-                                    alt="VS Code"
-                                 />
-                                 <span class="skill__name">Figma</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                  <a
+                     href="https://twitter.com/iam_benjo"
+                     target="_blank"
+                     rel="noreferrer"
+                     class="footer__link__icon"
+                     aria-label="twitter"
+                     ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="twitter"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        width="20"
+                     >
+                        <path
+                           fill="currentColor"
+                           d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                        ></path>
+                     </svg>
+                  </a>
+                  <a
+                     href="https://github.com/benjoquilario"
+                     target="_blank"
+                     rel="noreferrer"
+                     class="footer__link__icon"
+                     aria-label="github"
+                     ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="github"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 496 512"
+                        width="20"
+                     >
+                        <path
+                           fill="currentColor"
+                           d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                        ></path>
+                     </svg>
+                  </a>
+                  <a
+                     href="https://www.linkedin.com/in/benjo-quilario-415a351bb/"
+                     target="_blank"
+                     rel="noreferrer"
+                     class="footer__link__icon"
+                     aria-label="linkedin"
+                     ><svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fab"
+                        data-icon="linkedin"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"
+                        width="20"
+                     >
+                        <path
+                           fill="currentColor"
+                           d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        ></path>
+                     </svg>
+                  </a>
                </div>
+               <div class="footer__text"></div>
             </div>
-         </section>
-         <section class="projects section__select" id="projects">
-            <h2 class="heading heading--xl">Featured Projects</h2>
-            <div class="projects__container container section__select">
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">D-ARCH</h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://d-arch.netlify.app/"
-                           class="project__view"
-                           id="focus"
-                           target="_blank"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/D-Arch-Landing-Page"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        D-ARCH is a landing page website built with using react
-                        and style-componets, D-ARCH is a complete responsive in
-                        any devices
-                     </p>
-                     <div class="projects__tools">
-                        <span>React</span>
-                        <span>JSX</span>
-                        <span>React-Router-Dom</span>
-                        <span>Styled-components</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--6"></div>
-                  </div>
-               </article>
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">D-MOVIE</h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://d-movie.netlify.app/"
-                           class="project__view"
-                           id="focus"
-                           target="_blank"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/D-MOVIE"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        D-MOVIE is an application built with react, where user
-                        will able to search there favorite movie and gives tons
-                        of information about that specific movie
-                     </p>
-                     <div class="projects__tools">
-                        <span>React</span>
-                        <span>JSX</span>
-                        <span>React-Router-Dom</span>
-                        <span>CSS3</span>
-                        <span>SCSS</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--5"></div>
-                  </div>
-               </article>
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">D-ANIME</h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://d-anime.netlify.app/"
-                           class="project__view"
-                           id="focus"
-                           target="_blank"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/D-Anime"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        D-Anime is an app uses external APIs which is Jikan APIs
-                        . An application where user will able to search there
-                        favorite anime and gives tons of information about that
-                        specific anime
-                     </p>
-                     <div class="projects__tools">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>SCSS</span>
-                        <span>Parcel</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--1"></div>
-                  </div>
-               </article>
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">TRIUMPH GYM</h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://triumph-benjo.netlify.app/"
-                           class="project__view"
-                           id="focus"
-                           target="_blank"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/TRIUMPH-GYM"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        TRIUMPH GYM Website is a gym landing page website with a
-                        client side email, login and signup validation.
-                     </p>
-                     <div class="projects__tools">
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                        <span>JavaScript</span>
-                        <span>SCSS</span>
-                        <span>Parcel</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--3"></div>
-                  </div>
-               </article>
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">AMA BANK</h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://amabank-benjo.netlify.app/"
-                           class="project__view"
-                           target="_blank"
-                           id="focus"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/AMABank-Landing-page"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        An application that allows users to transfer money,
-                        request money and closed account. This is one of the web
-                        application that I built after finishing course from
-                        udemy
-                     </p>
-                     <div class="projects__tools">
-                        <span>React</span>
-                        <span>JSX</span>
-                        <span>CSS3</span>
-                        <span>SCSS</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--2"></div>
-                  </div>
-               </article>
-               <article class="projects__project section__select">
-                  <header class="projects__header">
-                     <h3 class="heading projects__title">
-                        FRONTENDMENTOR COMPILATION
-                     </h3>
-                     <div class="projects__link">
-                        <a
-                           href="https://frontendmentor-projects-vert.vercel.app/"
-                           class="project__view"
-                           id="focus"
-                           target="_blank"
-                           ><i
-                              class="fas fa-external-link-alt icon__project"
-                           ></i>
-                           Visit site
-                        </a>
-                        <a
-                           href="https://github.com/benjoquilario/Frontendmentor-Projects"
-                           class="project__code"
-                           target="_blank"
-                           id="focus"
-                           ><i class="fab fa-github icon__project"></i>
-                           View Source code
-                        </a>
-                     </div>
-                  </header>
-                  <div class="projects__info">
-                     <p class="paragraph projects__desc">
-                        A collection of frontendmentor project that I've
-                        completed.
-                     </p>
-                     <div class="projects__tools">
-                        <span>JavaScript</span>
-                        <span>HTML</span>
-                        <span>CSS3</span>
-                        <span>SCSS</span>
-                     </div>
-                  </div>
-                  <div>
-                     <div class="project project--4"></div>
-                  </div>
-               </article>
-            </div>
-         </section>
-      </main>
-      <footer class="footer" id="contact">
-         <div class="footer__container">
-            <div class="footer__link">
-               <a
-                  href="https://www.facebook.com/Benjo.Add07"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="footer__link__icon"
-                  aria-label="facebook"
-                  ><svg
-                     aria-hidden="true"
-                     focusable="false"
-                     data-prefix="fab"
-                     data-icon="facebook"
-                     role="img"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 512 512"
-                     width="20"
-                  >
-                     <path
-                        fill="currentColor"
-                        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-                     ></path>
-                  </svg>
-               </a>
-
-               <a
-                  href="https://twitter.com/iam_benjo"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="footer__link__icon"
-                  aria-label="twitter"
-                  ><svg
-                     aria-hidden="true"
-                     focusable="false"
-                     data-prefix="fab"
-                     data-icon="twitter"
-                     role="img"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 512 512"
-                     width="20"
-                  >
-                     <path
-                        fill="currentColor"
-                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                     ></path>
-                  </svg>
-               </a>
-               <a
-                  href="https://github.com/benjoquilario"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="footer__link__icon"
-                  aria-label="github"
-                  ><svg
-                     aria-hidden="true"
-                     focusable="false"
-                     data-prefix="fab"
-                     data-icon="github"
-                     role="img"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 496 512"
-                     width="20"
-                  >
-                     <path
-                        fill="currentColor"
-                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                     ></path>
-                  </svg>
-               </a>
-               <a
-                  href="https://www.linkedin.com/in/benjo-quilario-415a351bb/"
-                  target="_blank"
-                  rel="noreferrer"
-                  class="footer__link__icon"
-                  aria-label="linkedin"
-                  ><svg
-                     aria-hidden="true"
-                     focusable="false"
-                     data-prefix="fab"
-                     data-icon="linkedin"
-                     role="img"
-                     xmlns="http://www.w3.org/2000/svg"
-                     viewBox="0 0 448 512"
-                     width="20"
-                  >
-                     <path
-                        fill="currentColor"
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-                     ></path>
-                  </svg>
-               </a>
-            </div>
-            <div class="footer__text"></div>
-         </div>
-      </footer>
+         </footer>
+      </div>
    </body>
 </html>
