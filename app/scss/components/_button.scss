@@ -84,8 +84,7 @@
       align-items: center;
       // background-color: var(--red);
       // background-color: blue;
-      border: 2px solid var(--red);
-      border-radius: 4px;
+
       color: var(--white);
       box-shadow: 0px 10px 15px -7px var(--black);
       z-index: 1;
@@ -107,6 +106,8 @@
          height: 100%;
          background-color: var(--red);
          display: block;
+         border: 2px solid var(--red);
+         border-radius: 4px;
          z-index: -1;
          transition: all 350ms ease;
       }
