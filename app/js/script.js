@@ -88,7 +88,6 @@ class App {
       this.headerMenu.classList.remove('is-active');
       this.body.classList.remove('no-scroll');
       this.headerLogo.classList.remove('active-color');
-      this.overlay.classList.remove('overlay-active');
       this.btnMenu.setAttribute('aria-expanded', false);
       this.btnMenu.classList.remove('menu-active');
    }
@@ -97,7 +96,6 @@ class App {
       this.headerMenu.classList.add('is-active');
       this.body.classList.add('no-scroll');
       this.headerLogo.classList.add('active-color');
-      this.overlay.classList.add('overlay-active');
       this.btnMenu.setAttribute('aria-expanded', true);
       this.btnMenu.classList.add('menu-active');
    }
