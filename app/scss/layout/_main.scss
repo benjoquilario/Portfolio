@@ -316,7 +316,8 @@
       );
       z-index: -1;
    }
-   D &--1::before {
+
+   &--1::before {
       background-image: url('../../../images/D-anime.png');
    }
 
