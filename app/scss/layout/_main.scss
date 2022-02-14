@@ -316,9 +316,8 @@
       );
       z-index: -1;
    }
-
-   &--1::before {
-      background-image: url('../../../images/d-anime.png');
+   D &--1::before {
+      background-image: url('../../../images/D-anime.png');
    }
 
    &--2::before {
@@ -334,11 +333,11 @@
    }
 
    &--5::before {
-      background-image: url('../../../images/d-movie.png');
+      background-image: url('../../../images/D-movie.png');
    }
 
    &--6::before {
-      background-image: url('../../../images/d-arch.png');
+      background-image: url('../../../images/D-arch.png');
    }
 
    &__view,
