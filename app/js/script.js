@@ -24,7 +24,6 @@ class App {
       };
 
       this.btnMenu = document.querySelector(this.selectors.btnMenu);
-      this.btnBlue = document.querySelector(this.selectors.btnBlue);
       this.headerMenu = document.querySelector(this.selectors.headerMenu);
       this.headerList = document.querySelector(this.selectors.headerList);
       this.btnIcon = document.querySelector(this.selectors.btnIcon);
@@ -55,11 +54,6 @@ class App {
       this.headerList.addEventListener('click', this.hideMenu.bind(this));
       this.headerLogo.addEventListener('click', this.hideMenu.bind(this));
       this.headerMenu.addEventListener('click', this.smoothScroll.bind(this));
-      this.btnBlue.addEventListener('click', () => {
-         document
-            .querySelector('#about')
-            .scrollIntoView({ behavior: 'smooth' });
-      });
 
       window.addEventListener('keydown', e => {
          console.log(e.key);

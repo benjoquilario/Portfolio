@@ -17,7 +17,6 @@ p {
    }
 
    &--intro {
-      color: var(--black);
       font-size: clamp(30px, 5vw, 42px);
       text-align: center;
       font-weight: 600;
@@ -31,6 +30,7 @@ p {
       font-weight: 700;
       margin-bottom: 5px;
       text-transform: uppercase;
+      color: var(--red);
    }
 
    &--xl {
@@ -71,6 +71,12 @@ p {
       color: var(--white);
    }
 
+   &--sm {
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 10px;
+   }
+
    &--services {
       text-transform: uppercase;
       font-weight: 600;
@@ -90,12 +96,16 @@ p {
 
    &__name {
       font-weight: 700;
+      color: var(--red);
    }
 
    &--l {
       @extend .paragraph;
-      font-size: clamp(20px, 3vw, 21px);
-      margin-bottom: 26px;
+      font-size: clamp(15px, 2vw, 16px);
+      margin-bottom: 11px;
+      line-height: 28px;
+      text-align: left;
+      max-width: 355px;
    }
 
    &--about {
