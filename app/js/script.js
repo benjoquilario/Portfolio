@@ -1,7 +1,5 @@
 // header Navigator
 class App {
-   _skipToContent = document.querySelector('.skip-to-content-link');
-
    constructor() {
       this.varSelectors();
       this.setupEvents();
@@ -14,7 +12,7 @@ class App {
          headerList: '.header__list',
          btnIcon: '.btn__icon',
          headerLogo: '.header__logo',
-         overlay: '.overlay',
+
          body: 'body',
          headerContainer: '.header__container',
          header: '.header',
@@ -28,7 +26,6 @@ class App {
       this.headerList = document.querySelector(this.selectors.headerList);
       this.btnIcon = document.querySelector(this.selectors.btnIcon);
       this.headerLogo = document.querySelector(this.selectors.headerLogo);
-      this.overlay = document.querySelector(this.selectors.overlay);
       this.body = document.querySelector(this.selectors.body);
       this.headerContainer = document.querySelector(
          this.selectors.headerContainer
@@ -99,7 +96,6 @@ class App {
          this.headerMenu.classList.remove('is-active');
          this.body.classList.remove('no-scroll');
          this.headerLogo.classList.remove('active-color');
-         this.overlay.classList.remove('overlay-active');
          this.btnMenu.classList.remove('menu-active');
       }
    }
