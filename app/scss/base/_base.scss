@@ -54,6 +54,10 @@ a:active {
    }
 }
 
+figure {
+   height: 45px;
+}
+
 @media (prefers-reduced-motion: reduce) {
    html:focus-within {
       scroll-behavior: auto;
