@@ -21,7 +21,7 @@
    color: var(--black);
 
    &:focus {
-      outline: 3px dashed var(--red);
+      outline: 3px dashed var(--primary);
       outline-offset: 0;
       transform: translateX(0);
    }

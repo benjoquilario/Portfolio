@@ -2,7 +2,7 @@
 
 .footer {
    position: relative;
-   background-color: var(--black);
+   background-color: rgba(236, 236, 236, 0.4);
    padding: 1rem 8px;
 
    &__container {
@@ -23,18 +23,18 @@
          &:hover {
             svg path {
                transition: all 0.3s ease-in;
-               fill: var(--red);
+               fill: var(--black);
             }
          }
 
          svg path {
-            fill: var(--white);
+            fill: var(--black);
          }
       }
    }
 
    &__text {
-      color: var(--white);
+      color: var(--black);
       margin-top: 7px;
       text-align: center;
       font-size: clamp(12px, 2vw, 13px);

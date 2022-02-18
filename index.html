@@ -7,10 +7,6 @@
          name="description"
          content="Hi there!, I'm Benjo Quilario a self-taught passionate frontend developer focused on building fast, easy to-use and accessible websites"
       />
-      <meta
-         name="keywords"
-         content="benjo, benjoquilario, benjo quilario, benjoquilario me, benjo quilario me, portfolio design, portfolio website, portfolio sample, a portfolio website, portfolio book, portfolio background, benjo github, benjo twitter, benjo quilario github, benjo quilario twitter, benjo philippines, benjo quilario ph, benjoquilario philippines"
-      />
       <link rel="shortcut icon" type="image/png" href="images/code-solid.svg" />
       <meta name="title" content="Benjo Quilario" />
       <meta
@@ -60,9 +56,48 @@
       />
       <title>Benjo Quilario</title>
       <link rel="stylesheet" href="./dist/style.css" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+         async
+         src="https://www.googletagmanager.com/gtag/js?id=UA-220163690-1"
+      ></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() {
+            dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+
+         gtag('config', 'UA-220163690-1');
+      </script>
+
+      <!-- Google Tag Manager -->
+      <script>
+         (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+               j = d.createElement(s),
+               dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+         })(window, document, 'script', 'dataLayer', 'GTM-WT8RLG9');
+      </script>
+      <!-- End Google Tag Manager -->
+
       <script defer src="./dist/script.js"></script>
    </head>
    <body class="loading">
+      <noscript
+         ><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WT8RLG9"
+            height="0"
+            width="0"
+            style="display: none; visibility: hidden"
+         ></iframe
+      ></noscript>
+      <!-- End Google Tag Manager (noscript) -->
       <div class="main-container">
          <header class="header">
             <a href="#about" class="skip-to-content-link">Skip to content</a>
@@ -104,7 +139,7 @@
                            ></a>
                         </li>
                         <li class="header__item">
-                           <a href="#contact" class="header__link">Contact</a>
+                           <a href="#social" class="header__link">Social</a>
                         </li>
                      </ul>
                   </div>
@@ -432,7 +467,7 @@
                                     <figure>
                                        <img
                                           src="./images/webpack.png"
-                                          alt="VS Code"
+                                          alt="Webpack"
                                        />
                                     </figure>
                                     <span class="skill__name">Webpack</span>
@@ -441,7 +476,7 @@
                                     <figure>
                                        <img
                                           src="./images/figma-icon.svg"
-                                          alt="VS Code"
+                                          alt="Figma"
                                        />
                                     </figure>
                                     <span class="skill__name">Figma</span>
@@ -482,10 +517,11 @@
                      </header>
                      <div class="projects__info">
                         <p class="paragraph projects__desc">
-                           D-ARCH is a landing page website built with using
-                           react and style-componets, D-ARCH is a complete
-                           responsive in any devices
+                           D-ARCH is a landing page website built using react
+                           and styled-componets, D-ARCH is a complete responsive
+                           in any devices.
                         </p>
+
                         <div class="projects__tools">
                            <span>React</span>
                            <span>JSX</span>
@@ -523,9 +559,9 @@
                      </header>
                      <div class="projects__info">
                         <p class="paragraph projects__desc">
-                           D-MOVIE is an application built with react, where
-                           user will able to search there favorite movie and
-                           gives tons of information about that specific movie
+                           D-MOVIE is an application built with react and third
+                           party API's, where user will able to search there
+                           favorite movie and know the current movie trending.
                         </p>
                         <div class="projects__tools">
                            <span>React</span>
@@ -566,7 +602,7 @@
                      <div class="projects__info">
                         <p class="paragraph projects__desc">
                            D-Anime is an app uses external APIs which is Jikan
-                           APIs . An application where user will able to search
+                           APIs. An application where user will able to search
                            there favorite anime and gives tons of information
                            about that specific anime
                         </p>
@@ -711,7 +747,7 @@
                </div>
             </section>
          </main>
-         <footer class="footer" id="contact">
+         <footer class="footer" id="social">
             <div class="footer__container">
                <div class="footer__link">
                   <a

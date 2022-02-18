@@ -63,7 +63,7 @@
          &:hover {
             svg path {
                transition: all 350ms ease-in-out;
-               fill: var(--red);
+               fill: var(--primary);
             }
          }
       }
@@ -84,13 +84,14 @@
 
 .about {
    padding: 80px 28px 20px;
+   background-color: rgba(236, 236, 236, 0.4);
 
    &__container {
       display: flex;
       flex-direction: column;
       justify-items: center;
       align-items: center;
-      gap: 14px;
+      gap: 42px;
 
       @media screen and (min-width: 769px) {
          display: grid;
@@ -233,6 +234,7 @@
 
    &__link {
       display: flex;
+      flex-direction: row;
       gap: 7px;
    }
 
@@ -243,7 +245,7 @@
    &__tools {
       span {
          color: #fff;
-         background-color: var(--red);
+         background-color: var(--primary);
          display: inline-block;
          padding: 0.25em 0.4em;
          font-size: 75%;
@@ -373,8 +375,8 @@
    }
 
    &__view {
-      background-color: #868d94;
-      border-color: #868d94;
+      background-color: #6c757d;
+      border-color: #646a70;
       color: var(--white);
       transition: all 0.3s ease;
       width: 130px;
@@ -384,7 +386,7 @@
       }
 
       &:hover {
-         background-color: #868d94ce;
+         background-color: #6c757db9;
       }
    }
 

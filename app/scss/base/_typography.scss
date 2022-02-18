@@ -13,7 +13,7 @@ p {
    font-weight: 400;
 
    &__name {
-      color: var(--red);
+      color: var(--primary);
    }
 
    &--intro {
@@ -21,6 +21,10 @@ p {
       text-align: center;
       font-weight: 600;
       margin-bottom: 18px;
+
+      @media screen and (max-width: 768px) {
+         text-align: left;
+      }
    }
 
    &--xxl {
@@ -30,7 +34,7 @@ p {
       font-weight: 700;
       margin-bottom: 5px;
       text-transform: uppercase;
-      color: var(--red);
+      color: var(--primary);
    }
 
    &--xl {
@@ -38,20 +42,12 @@ p {
       font-size: clamp(17px, 4vw, 23px);
       font-weight: 700;
       text-align: center;
-      color: var(--red);
-      margin-bottom: 29px;
+      color: var(--primary);
+      margin-bottom: 12px;
       text-transform: uppercase;
 
-      &::before {
-         content: '';
-         position: absolute;
-         left: 0;
-         right: 0;
-         bottom: -5px;
-         height: 5px;
-         width: 64px;
-         margin: 0 auto;
-         background-color: var(--red);
+      @media screen and (max-width: 768px) {
+         text-align: left;
       }
    }
 
@@ -96,7 +92,7 @@ p {
 
    &__name {
       font-weight: 700;
-      color: var(--red);
+      color: var(--primary);
    }
 
    &--l {
@@ -117,7 +113,7 @@ p {
 
 .learnMore {
    &__text {
-      color: var(--red);
+      color: var(--primary);
       font-weight: 700;
       font-size: 17px;
       letter-spacing: 1px;
@@ -128,7 +124,7 @@ p {
    &__icon {
       svg {
          path {
-            fill: var(--red);
+            fill: var(--primary);
          }
       }
    }
