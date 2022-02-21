@@ -83,7 +83,7 @@
 }
 
 .about {
-   padding: 80px 28px 20px;
+   padding: 80px 28px;
    background-color: rgba(236, 236, 236, 0.4);
 
    &__container {
@@ -201,7 +201,7 @@
 }
 
 .projects {
-   padding: 170px 28px;
+   padding: 140px 28px;
 
    &__container {
       display: flex;
@@ -247,9 +247,9 @@
          color: #fff;
          background-color: var(--primary);
          display: inline-block;
-         padding: 0.25em 0.4em;
+         padding: 0.25em 0.5em;
          font-size: 75%;
-         font-weight: 700;
+         font-weight: 600;
          line-height: 1;
          text-align: center;
          white-space: nowrap;

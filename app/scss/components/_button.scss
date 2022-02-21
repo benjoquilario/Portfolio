@@ -139,11 +139,22 @@
       height: 48px;
    }
 
-   &--more {
+   &--cv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary);
+      width: 140px;
+      height: 38px;
+      padding: 0 12px;
+      border-radius: 6px;
+      color: var(--white);
+      font-weight: 400;
+      font-size: clamp(13px, 3vw, 14px);
+      transition: opacity 350ms ease-in-out;
+
       &:hover {
-         .learnMore__text {
-            margin-right: 26px;
-         }
+         opacity: 0.84;
       }
    }
 
