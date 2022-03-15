@@ -169,8 +169,7 @@
       gap: 20px;
    }
 
-   &__tech,
-   &__tools {
+   &__tech {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -180,18 +179,18 @@
 
    &__names {
       display: grid;
-      grid-template-columns: 45px 1fr;
+      grid-template-columns: 48px 1fr;
       align-items: center;
       width: 100%;
       font-weight: 500;
       text-align: left;
-      padding: 10px;
+      padding: 8px 14px;
       margin-bottom: 15px;
       box-shadow: 0 0 6px 2px rgba(48, 48, 48, 0.1);
 
       img {
          width: 41px;
-         height: 45px;
+         height: 43px;
       }
 
       .skill__name {
@@ -242,23 +241,6 @@
       margin-bottom: 35px;
    }
 
-   &__tools {
-      span {
-         color: #fff;
-         background-color: var(--primary);
-         display: inline-block;
-         padding: 0.25em 0.5em;
-         font-size: 75%;
-         font-weight: 600;
-         line-height: 1;
-         text-align: center;
-         white-space: nowrap;
-         vertical-align: baseline;
-         -webkit-border-radius: 0.25rem;
-         border-radius: 0.25rem;
-      }
-   }
-
    &__desc {
       font-size: clamp(14px, 2vw, 15px);
       line-height: 24px;
@@ -267,6 +249,23 @@
    &__title {
       font-size: clamp(18px, 3vw, 21px);
       font-weight: 700;
+   }
+
+   &__tools {
+      span {
+         background-color: var(--primary);
+         -webkit-border-radius: 0.25rem;
+         border-radius: 0.25rem;
+         color: #fff;
+         display: inline-block;
+         font-size: 75%;
+         font-weight: 600;
+         line-height: 1;
+         padding: 0.25em 0.5em;
+         text-align: center;
+         vertical-align: baseline;
+         white-space: nowrap;
+      }
    }
 }
 .project {
@@ -319,7 +318,7 @@
    }
 
    &--1::before {
-      background-image: url('../../../images/D-anime.png');
+      background-image: url('../../../images/danime.png');
    }
 
    &--2::before {
@@ -404,13 +403,7 @@
    }
 }
 
-.tools__container,
 .tech__container {
    display: flex;
    gap: 20px;
-
-   @media screen and (max-width: 768px) {
-      flex-direction: column;
-      gap: 0px;
-   }
 }
