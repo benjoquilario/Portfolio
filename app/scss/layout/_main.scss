@@ -122,6 +122,22 @@
    &__profile {
       grid-area: profile;
    }
+
+   &__tech {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 42px;
+      margin-bottom: 22px;
+
+      h3 {
+         font-weight: 700;
+      }
+
+      p {
+         font-size: 11px;
+      }
+   }
 }
 
 .services {
