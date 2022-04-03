@@ -30,7 +30,7 @@ p {
    &--xxl {
       @extend .heading;
       font-size: clamp(30px, 7vw, 38px);
-      max-width: 450px;
+      max-width: 480px;
       font-weight: 700;
       margin-bottom: 5px;
       text-transform: uppercase;
