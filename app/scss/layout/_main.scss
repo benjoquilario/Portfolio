@@ -83,7 +83,7 @@
 }
 
 .about {
-   padding: 80px 28px;
+   padding: 90px 28px;
    background-color: rgba(236, 236, 236, 0.4);
 
    &__container {
@@ -216,7 +216,7 @@
 }
 
 .projects {
-   padding: 80px 28px;
+   padding: 90px 28px;
 
    &__container {
       display: flex;
@@ -346,7 +346,7 @@
    }
 
    &--4::before {
-      background-image: url('../../../images/triumph.png');
+      background-image: url('../../../images/triumphgym.png');
    }
 
    &__view,
