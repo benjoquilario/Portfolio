@@ -338,23 +338,15 @@
    }
 
    &--2::before {
-      background-image: url('../../../images/ama.png');
+      background-image: url('../../../images/dmovie.png');
    }
 
    &--3::before {
-      background-image: url('../../../images/Triumph.png');
-   }
-
-   &--4::before {
       background-image: url('../../../images/frontendmentor.png');
    }
 
-   &--5::before {
-      background-image: url('../../../images/d-movie.png');
-   }
-
-   &--6::before {
-      background-image: url('../../../images/D-arch.png');
+   &--4::before {
+      background-image: url('../../../images/triumph.png');
    }
 
    &__view,
