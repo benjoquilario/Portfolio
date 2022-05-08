@@ -11,7 +11,7 @@ Others are welcome to use this code as a base for their own projects, but with e
 ### How to use
 
 1. Clone this repo to a local directory on your machine
-2. Run `npm run gulp` or write `gulp` in the terminal and wait for `localhost`
+2. Run `npm run gulp or yarn start/npm start` or write `gulp` in the terminal and wait for `localhost:3000s`
 
 ### Screenshot
 
@@ -19,18 +19,17 @@ Others are welcome to use this code as a base for their own projects, but with e
 
 ### Links
 
--  Source Code: [View Source Code](https://github.com/benjoquilario/Portfolio)
--  Live Site URL: [Preview Site](https://portfolio-sigma-ten-27.vercel.app/)
+- Preview Site: [Preview Site](https://benjoquilario.me/)
 
 ### Built with
 
--  Semantic HTML5 markup
--  CSS custom properties
--  Flexbox
--  CSS Grid
--  Mobile-first workflow
--  Gulp
--  SCSS
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Gulp
+- SCSS
 
--  LinkedIn - [@benjoquilario](https://www.linkedin.com/in/benjo-quilario-415a351bb/)
--  Twitter - [@iam_benjo](https://twitter.com/iam_benjo)
+- LinkedIn - [@benjoquilario](https://www.linkedin.com/in/benjo-quilario-415a351bb/)
+- Twitter - [@iam_benjo](https://twitter.com/iam_benjo)
