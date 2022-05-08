@@ -4,7 +4,8 @@
    "description": "",
    "main": "gulpfile.js",
    "scripts": {
-      "start": "gulp"
+      "start": "gulp",
+      "build": "vercel build"
    },
    "repository": {
       "type": "git",
