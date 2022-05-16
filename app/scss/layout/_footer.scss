@@ -1,42 +1,69 @@
 @use '../util/' as *;
 
 .footer {
-   position: relative;
-   background-color: rgba(236, 236, 236, 0.4);
-   padding: 1rem 8px;
+  position: relative;
+  background-color: rgba(236, 236, 236, 0.4);
+  padding: 1rem;
 
-   &__container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-   }
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      'info info'
+      'text link';
 
-   &__link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'info'
+        'link'
+        'text';
+      justify-items: center;
+    }
+  }
 
-      &__icon {
-         transition: all 0.3s ease-in;
+  &__link {
+    grid-area: link;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 
-         &:hover {
-            svg path {
-               transition: all 0.3s ease-in;
-               fill: var(--black);
-            }
-         }
+    &__icon {
+      transition: all 0.3s ease-in;
 
-         svg path {
-            fill: var(--black);
-         }
+      &:hover {
+        svg path {
+          transition: all 0.3s ease-in;
+          fill: var(--black);
+        }
       }
-   }
 
-   &__text {
-      color: var(--black);
-      margin-top: 7px;
+      svg path {
+        fill: var(--black);
+      }
+    }
+  }
+
+  &__info {
+    grid-area: info;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 30px;
+
+    h5 {
+      margin-bottom: 4px;
+    }
+  }
+
+  &__text {
+    grid-area: text;
+    color: var(--black);
+    margin-top: 7px;
+    font-size: clamp(12px, 2vw, 13px);
+
+    @media screen and (max-width: 768px) {
       text-align: center;
-      font-size: clamp(12px, 2vw, 13px);
-   }
+    }
+  }
 }
