@@ -84,7 +84,6 @@
 
 .about {
   padding: 90px 28px;
-  background-color: rgba(236, 236, 236, 0.4);
 
   &__container {
     display: flex;
@@ -231,6 +230,7 @@
 
 .projects {
   padding: 90px 28px;
+  background-color: rgba(236, 236, 236, 0.4);
 
   &__container {
     display: flex;
@@ -344,23 +344,23 @@
   }
 
   &--5::before {
-    background-image: url('../../../images/invoices.png');
+    background-image: url('../../../images/invoices.jpg');
   }
 
   &--1::before {
-    background-image: url('../../../images/animehi.png');
+    background-image: url('../../../images/animehi.jpg');
   }
 
   &--2::before {
-    background-image: url('../../../images/next-movies.png');
+    background-image: url('../../../images/next-movies.jpg');
   }
 
   &--3::before {
-    background-image: url('../../../images/frontendmentor.png');
+    background-image: url('../../../images/frontendmentor.jpg');
   }
 
   &--4::before {
-    background-image: url('../../../images/triumph.png');
+    background-image: url('../../../images/triumph.jpg');
   }
 
   &__view,
