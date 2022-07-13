@@ -343,6 +343,10 @@
     z-index: -1;
   }
 
+  &--6::before {
+    background-image: url('../../../images/insider.png');
+  }
+
   &--5::before {
     background-image: url('../../../images/invoices.jpg');
   }
